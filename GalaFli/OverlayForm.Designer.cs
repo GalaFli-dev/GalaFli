@@ -65,7 +65,7 @@
             this.T_tab.Name = "T_tab";
             this.T_tab.Size = new System.Drawing.Size(40, 40);
             this.T_tab.TabIndex = 1;
-            this.T_tab.Text = "TAB";
+            this.T_tab.Text = "Tab";
             this.T_tab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.T_tab, "Tabキー");
             // 
@@ -139,7 +139,6 @@
             this.T7.TabIndex = 5;
             this.T7.Text = "7";
             this.T7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.T7.Click += new System.EventHandler(this.T7_Click);
             // 
             // T8
             // 
@@ -192,7 +191,6 @@
             this.T_plus.Text = "+";
             this.T_plus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.T_plus, "プラス(加算)");
-            this.T_plus.Click += new System.EventHandler(this.T_plus_Click);
             // 
             // T4
             // 
@@ -210,7 +208,6 @@
             this.T4.TabIndex = 9;
             this.T4.Text = "4";
             this.T4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.T4.Click += new System.EventHandler(this.T4_Click);
             // 
             // T5
             // 
@@ -263,7 +260,6 @@
             this.T_bs.Text = "BS";
             this.T_bs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.T_bs, "BackSpace");
-            this.T_bs.Click += new System.EventHandler(this.T_bs_Click);
             // 
             // T1
             // 
@@ -281,7 +277,6 @@
             this.T1.TabIndex = 13;
             this.T1.Text = "1";
             this.T1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.T1.Click += new System.EventHandler(this.T1_Click);
             // 
             // T2
             // 
@@ -316,7 +311,6 @@
             this.T3.TabIndex = 15;
             this.T3.Text = "3";
             this.T3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.T3.Click += new System.EventHandler(this.T3_Click);
             // 
             // T_enter
             // 
@@ -352,7 +346,6 @@
             this.T0.TabIndex = 17;
             this.T0.Text = "0";
             this.T0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.T0.Click += new System.EventHandler(this.T0_Click);
             // 
             // T000
             // 

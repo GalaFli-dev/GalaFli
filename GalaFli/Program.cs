@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text.Json;
 using System.Threading;
 using System.Timers;
 using System.Windows;
@@ -12,9 +14,36 @@ using System.Windows.Forms;
 
 namespace GalaFli
 {
+
+
+    //jsonから受け取ったすべてのデータが入るクラス（構造体）
+    public class Data
+    {
+        public Statedata[] data { get; set; }
+    }
+
+    // 画面状態のクラス（構造体）
+    public class Statedata
+    {
+        public string name { get; set; }
+        public bool basis { get; set; }
+        public Key[] keys { get; set; }
+    }
+
+    // Keyのクラス（構造体）
+    public class Key
+    {
+        public string keyname { get; set; }
+        public string action { get; set; }
+        public string[][] value { get; set; }
+        public string text { get; set; }
+    }
+
+
+
+
     internal static class Program
     {
-
         /// <summary>
         /// アプリケーションのメイン エントリ ポイントです。
         /// </summary>
@@ -26,25 +55,44 @@ namespace GalaFli
 
             OverlayForm always_overlay = new OverlayForm();
 
-
-            // OverlayForm を別スレッドで実行
-            Thread overlayThread = new Thread(() =>
+            try
             {
-                Application.Run(always_overlay);
-            });
+                //ファイルパスの指定(自身で用意した場所のパスを書く)
+                string filePath = "./all_data.json";
+                Debug.WriteLine("json読み込み完了");
 
-            Thread labelChange = new Thread(() =>
+                //ファイルを読み込み
+                string json = File.ReadAllText(filePath);
+
+                //JSONをクラスオブジェクト(インスタンス)に変換
+                var jsonDataTemp = JsonSerializer.Deserialize<Data>(json);
+
+                // form1にあるJson_LoadクラスにjsonDataを渡す
+                always_overlay.Json_Load(jsonDataTemp);
+
+
+                // OverlayForm を別スレッドで実行
+                Thread overlayThread = new Thread(() =>
+                {
+                    Application.Run(always_overlay);
+                });
+
+                
+
+                overlayThread.Start();
+                //labelChange.Start();
+
+                // Tasktray をメインスレッドで実行
+                Application.Run(new Tasktray(always_overlay));
+
+
+            }
+
+            catch (Exception ex)
             {
-                String[] a = new string[] { "NL", " ", " ", " ", " ゛", " く", " ", " ", " き", " か", " け", " BS", " ", " こ", " ", " ", " ", " ", "" };
-                always_overlay.Change_Tlabel(a);
-            });
-
-
-            overlayThread.Start();
-            //labelChange.Start();
-            // Tasktray をメインスレッドで実行
-            Application.Run(new Tasktray());
-
+                // エラーメッセージ表示やログ出力などのエラーハンドリングを行う
+                Debug.WriteLine("Program JSONファイルの読み込みエラー: " + ex.Message);
+            }
         }
     }
 
@@ -57,7 +105,7 @@ namespace GalaFli
 
         private System.ComponentModel.IContainer components;
 
-        public Tasktray()
+        public Tasktray(OverlayForm debug_OverlayForm)
         {
             this.components = new System.ComponentModel.Container();
             this.contextMenu1 = new System.Windows.Forms.ContextMenu();
@@ -96,7 +144,17 @@ namespace GalaFli
             toolStripMenuItem.Text = "&終了";
             toolStripMenuItem.Click += menuItem1_Click;
             contextMenuStrip.Items.Add(toolStripMenuItem);
+
+            // デバッグ用
+            ContextMenuStrip DebugcontextMenuStrip = new ContextMenuStrip();
+            ToolStripMenuItem DebugtoolStripMenuItem = new ToolStripMenuItem();
+            DebugtoolStripMenuItem.Text = "&デバッグ";
+            DebugtoolStripMenuItem.Click += new EventHandler(debug_Click(debug_OverlayForm));
+            contextMenuStrip.Items.Add(DebugtoolStripMenuItem);
+
+
             notifyIcon1.ContextMenuStrip = contextMenuStrip;
+
 
             this.WindowState = FormWindowState.Minimized;
             this.ShowInTaskbar = false;
@@ -132,6 +190,29 @@ namespace GalaFli
             Application.Exit();
 
         }
+
+        private EventHandler debug_Click(OverlayForm a)
+        {
+            a.debug_post();
+            throw new NotImplementedException();
+
+        }
     }
 
 }
+
+/*
+・状態変数名定義
+大きく分けて二つに分ける
+    ・kana
+    かな文字のデフォルト:kana_basis
+    かな文字のあ行      :kana_row_a
+
+    ・alpha(alphanumeric)
+    英数字のデフォルト  :alpha_basis
+    英数字のa行(a,b,c)  :alpha_row_a
+
+・上記以外の変数名定義
+    ・2単語以上の場合
+    1つ目の最初の文字が小文字、2つ目以降の最初の文字は大文字
+*/
