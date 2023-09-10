@@ -14,6 +14,7 @@ namespace GalaFli
         [STAThread]
         static void Main()
         {
+            Console.WriteLine("push test by himono");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
