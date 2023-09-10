@@ -149,7 +149,7 @@ namespace GalaFli
             ContextMenuStrip DebugcontextMenuStrip = new ContextMenuStrip();
             ToolStripMenuItem DebugtoolStripMenuItem = new ToolStripMenuItem();
             DebugtoolStripMenuItem.Text = "&デバッグ";
-            DebugtoolStripMenuItem.Click += new EventHandler(debug_Click(debug_OverlayForm));
+            //DebugtoolStripMenuItem.Click += new EventHandler(debug_Click(debug_OverlayForm));
             contextMenuStrip.Items.Add(DebugtoolStripMenuItem);
 
 
