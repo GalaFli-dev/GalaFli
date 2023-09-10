@@ -70,6 +70,7 @@ namespace GalaFli
         private void OverlayForm_Load(object sender, EventArgs e)
         {
 
+
         }
 
 
