@@ -1,4 +1,4 @@
-﻿namespace clock_Overlay_soft2
+﻿namespace GalaFli
 {
     partial class OverlayForm
     {
@@ -53,8 +53,8 @@
             // 
             // T_tab
             // 
-            this.T_tab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T_tab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_tab.BackColor = System.Drawing.SystemColors.Control;
             this.T_tab.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -71,8 +71,8 @@
             // 
             // T_slash
             // 
-            this.T_slash.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T_slash.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_slash.BackColor = System.Drawing.SystemColors.Control;
             this.T_slash.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -89,8 +89,8 @@
             // 
             // T_asterisk
             // 
-            this.T_asterisk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T_asterisk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_asterisk.BackColor = System.Drawing.SystemColors.Control;
             this.T_asterisk.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -107,8 +107,8 @@
             // 
             // T_minus
             // 
-            this.T_minus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T_minus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_minus.BackColor = System.Drawing.SystemColors.Control;
             this.T_minus.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -125,8 +125,8 @@
             // 
             // T7
             // 
-            this.T7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T7.BackColor = System.Drawing.SystemColors.Control;
             this.T7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -143,8 +143,8 @@
             // 
             // T8
             // 
-            this.T8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T8.BackColor = System.Drawing.SystemColors.Control;
             this.T8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -160,8 +160,8 @@
             // 
             // T9
             // 
-            this.T9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T9.BackColor = System.Drawing.SystemColors.Control;
             this.T9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -177,8 +177,8 @@
             // 
             // T_plus
             // 
-            this.T_plus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T_plus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_plus.BackColor = System.Drawing.SystemColors.Control;
             this.T_plus.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -196,8 +196,8 @@
             // 
             // T4
             // 
-            this.T4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T4.BackColor = System.Drawing.SystemColors.Control;
             this.T4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -214,8 +214,8 @@
             // 
             // T5
             // 
-            this.T5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T5.BackColor = System.Drawing.SystemColors.Control;
             this.T5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -231,8 +231,8 @@
             // 
             // T6
             // 
-            this.T6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T6.BackColor = System.Drawing.SystemColors.Control;
             this.T6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -248,8 +248,8 @@
             // 
             // T_bs
             // 
-            this.T_bs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T_bs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_bs.BackColor = System.Drawing.SystemColors.Control;
             this.T_bs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -267,8 +267,8 @@
             // 
             // T1
             // 
-            this.T1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T1.BackColor = System.Drawing.SystemColors.Control;
             this.T1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -285,8 +285,8 @@
             // 
             // T2
             // 
-            this.T2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T2.BackColor = System.Drawing.SystemColors.Control;
             this.T2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -302,8 +302,8 @@
             // 
             // T3
             // 
-            this.T3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T3.BackColor = System.Drawing.SystemColors.Control;
             this.T3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -320,8 +320,8 @@
             // 
             // T_enter
             // 
-            this.T_enter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T_enter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_enter.BackColor = System.Drawing.SystemColors.Control;
             this.T_enter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -338,8 +338,8 @@
             // 
             // T0
             // 
-            this.T0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T0.BackColor = System.Drawing.SystemColors.Control;
             this.T0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -356,8 +356,8 @@
             // 
             // T000
             // 
-            this.T000.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T000.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T000.BackColor = System.Drawing.SystemColors.Control;
             this.T000.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -373,8 +373,8 @@
             // 
             // T_dot
             // 
-            this.T_dot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.T_dot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_dot.BackColor = System.Drawing.SystemColors.Control;
             this.T_dot.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;

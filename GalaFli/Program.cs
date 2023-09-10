@@ -21,7 +21,6 @@ namespace GalaFli
         [STAThread]
         static void Main()
         {
-            Console.WriteLine("push test 2 by ishihara");
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
@@ -42,7 +41,7 @@ namespace GalaFli
 
 
             overlayThread.Start();
-            labelChange.Start();
+            //labelChange.Start();
             // Tasktray をメインスレッドで実行
             Application.Run(new Tasktray());
 

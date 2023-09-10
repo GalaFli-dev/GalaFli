@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Text;
 
-namespace clock_Overlay_soft2
+namespace GalaFli
 {
 
     public partial class OverlayForm : Form
