@@ -8,6 +8,7 @@ namespace GalaFli
 {
     internal static class Program
     {
+        // テストコメント後で消してください
         /// <summary>
         /// アプリケーションのメイン エントリ ポイントです。
         /// </summary>
