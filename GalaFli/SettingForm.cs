@@ -74,10 +74,10 @@ namespace GalaFli
             
             bool[] ret = new bool[5];
             ret[0] = WritePrivateProfileString("Tenkey", "deviceId", saveDevice.Value, ".\\TenkeySettings.ini");
-            ret[1] = WritePrivateProfileString("Tenkey", "tabNum", isBackSpace.Checked.ToString(), ".\\TenkeySettings.ini");
-            ret[2] = WritePrivateProfileString("Tenkey", "BS", isTabNumlock.Checked.ToString(), ".\\TenkeySettings.ini");
-            ret[3] = WritePrivateProfileString("Tenkey", "isThreeZeros", isIntegration.Checked.ToString(), ".\\TenkeySettings.ini");
-            ret[4] = WritePrivateProfileString("Tenkey", "isIntegrateZeros", isThreeZeros.Checked.ToString(), ".\\TenkeySettings.ini");
+            ret[1] = WritePrivateProfileString("Tenkey", "isTab", isTabNumlock.Checked.ToString(), ".\\TenkeySettings.ini");
+            ret[2] = WritePrivateProfileString("Tenkey", "isBSUpper", isBackSpace.Checked.ToString(), ".\\TenkeySettings.ini");
+            ret[3] = WritePrivateProfileString("Tenkey", "isZeroUnion", isIntegration.Checked.ToString(), ".\\TenkeySettings.ini");
+            ret[4] = WritePrivateProfileString("Tenkey", "isZeroThree", isThreeZeros.Checked.ToString(), ".\\TenkeySettings.ini");
 
 
             Application.Restart();

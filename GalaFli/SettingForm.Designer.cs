@@ -32,13 +32,13 @@
             this.buttonCancel = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.ConfigureGroupBox = new System.Windows.Forms.GroupBox();
+            this.isThreeZeros = new System.Windows.Forms.CheckBox();
+            this.isIntegration = new System.Windows.Forms.CheckBox();
+            this.isTabNumlock = new System.Windows.Forms.CheckBox();
+            this.isBackSpace = new System.Windows.Forms.CheckBox();
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.isBackSpace = new System.Windows.Forms.CheckBox();
-            this.isTabNumlock = new System.Windows.Forms.CheckBox();
-            this.isIntegration = new System.Windows.Forms.CheckBox();
-            this.isThreeZeros = new System.Windows.Forms.CheckBox();
             this.ConfigureGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +88,48 @@
             this.ConfigureGroupBox.TabIndex = 5;
             this.ConfigureGroupBox.TabStop = false;
             // 
+            // isThreeZeros
+            // 
+            this.isThreeZeros.AutoSize = true;
+            this.isThreeZeros.Location = new System.Drawing.Point(6, 196);
+            this.isThreeZeros.Name = "isThreeZeros";
+            this.isThreeZeros.Size = new System.Drawing.Size(90, 16);
+            this.isThreeZeros.TabIndex = 10;
+            this.isThreeZeros.Text = "0が3つですか?";
+            this.isThreeZeros.UseVisualStyleBackColor = true;
+            // 
+            // isIntegration
+            // 
+            this.isIntegration.AutoSize = true;
+            this.isIntegration.Location = new System.Drawing.Point(7, 174);
+            this.isIntegration.Name = "isIntegration";
+            this.isIntegration.Size = new System.Drawing.Size(186, 16);
+            this.isIntegration.TabIndex = 9;
+            this.isIntegration.Text = "0と00・000が同じキーにありますか?";
+            this.isIntegration.UseVisualStyleBackColor = true;
+            // 
+            // isTabNumlock
+            // 
+            this.isTabNumlock.AutoSize = true;
+            this.isTabNumlock.Location = new System.Drawing.Point(7, 130);
+            this.isTabNumlock.Name = "isTabNumlock";
+            this.isTabNumlock.Size = new System.Drawing.Size(112, 16);
+            this.isTabNumlock.TabIndex = 8;
+            this.isTabNumlock.Text = "左上はTabですか?";
+            this.isTabNumlock.UseVisualStyleBackColor = true;
+            this.isTabNumlock.CheckedChanged += new System.EventHandler(this.isTabNumlock_CheckedChanged);
+            // 
+            // isBackSpace
+            // 
+            this.isBackSpace.AutoSize = true;
+            this.isBackSpace.Location = new System.Drawing.Point(7, 152);
+            this.isBackSpace.Name = "isBackSpace";
+            this.isBackSpace.Size = new System.Drawing.Size(150, 16);
+            this.isBackSpace.TabIndex = 7;
+            this.isBackSpace.Text = "右上はBackSpaceですか?";
+            this.isBackSpace.UseVisualStyleBackColor = true;
+            this.isBackSpace.CheckedChanged += new System.EventHandler(this.checkBack_CheckedChanged);
+            // 
             // buttonUpdate
             // 
             this.buttonUpdate.Location = new System.Drawing.Point(296, 72);
@@ -117,48 +159,6 @@
             this.textBox1.Size = new System.Drawing.Size(100, 12);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "デバイス";
-            // 
-            // isBackSpace
-            // 
-            this.isBackSpace.AutoSize = true;
-            this.isBackSpace.Location = new System.Drawing.Point(7, 130);
-            this.isBackSpace.Name = "isBackSpace";
-            this.isBackSpace.Size = new System.Drawing.Size(115, 16);
-            this.isBackSpace.TabIndex = 7;
-            this.isBackSpace.Text = "BackSpaceが右上";
-            this.isBackSpace.UseVisualStyleBackColor = true;
-            this.isBackSpace.CheckedChanged += new System.EventHandler(this.checkBack_CheckedChanged);
-            // 
-            // isTabNumlock
-            // 
-            this.isTabNumlock.AutoSize = true;
-            this.isTabNumlock.Location = new System.Drawing.Point(7, 152);
-            this.isTabNumlock.Name = "isTabNumlock";
-            this.isTabNumlock.Size = new System.Drawing.Size(108, 16);
-            this.isTabNumlock.TabIndex = 8;
-            this.isTabNumlock.Text = "TabとNumが一緒";
-            this.isTabNumlock.UseVisualStyleBackColor = true;
-            this.isTabNumlock.CheckedChanged += new System.EventHandler(this.isTabNumlock_CheckedChanged);
-            // 
-            // isIntegration
-            // 
-            this.isIntegration.AutoSize = true;
-            this.isIntegration.Location = new System.Drawing.Point(7, 174);
-            this.isIntegration.Name = "isIntegration";
-            this.isIntegration.Size = new System.Drawing.Size(135, 16);
-            this.isIntegration.TabIndex = 9;
-            this.isIntegration.Text = "0と00・000が離れている";
-            this.isIntegration.UseVisualStyleBackColor = true;
-            // 
-            // isThreeZeros
-            // 
-            this.isThreeZeros.AutoSize = true;
-            this.isThreeZeros.Location = new System.Drawing.Point(6, 196);
-            this.isThreeZeros.Name = "isThreeZeros";
-            this.isThreeZeros.Size = new System.Drawing.Size(55, 16);
-            this.isThreeZeros.TabIndex = 10;
-            this.isThreeZeros.Text = "0が3つ";
-            this.isThreeZeros.UseVisualStyleBackColor = true;
             // 
             // SettingForm
             // 
