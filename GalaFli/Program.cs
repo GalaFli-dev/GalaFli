@@ -49,7 +49,7 @@ namespace GalaFli
         //どこでインスタンス化しても読み込めるようにここにDllImportが書いてあります
         [DllImport("kernel32.dll", EntryPoint = "GetPrivateProfileStringW", CharSet = CharSet.Unicode, SetLastError = true)]
         static extern uint GetPrivateProfileString(string lpAppName, string lpKeyName, string lpDefault, StringBuilder lpReturnedString, uint nSize, string lpFileName);
-        public string deviceId { get;}//デバイスID
+        public string deviceId { get; }//デバイスID
         public bool isTab { get; set; }//タブキーが左上か
         public bool isBSUpper { get; set; }//BSキーが上にあるか
         public bool isZeroUnion { get; set; }//0キーと000キーが一体型か
@@ -59,48 +59,30 @@ namespace GalaFli
         public TenkeySettings()
         {
             StringBuilder sb = new StringBuilder(256);//読み込み用のバッファ
-            for (int i = 0; i < 5; i++)
-            {
-                
-                switch (i)
-                {
-                    case 0://デバイスIDの読み込み
-                        read_flag = GetPrivateProfileString("Tenkey", "deviceId", "none", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
-                        this.deviceId = sb.ToString();
-                        break;
-                    case 1://isTabの読み込み
-                        read_flag = GetPrivateProfileString("Tenkey", "isTab", "false", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
-                        this.isTab = Convert.ToBoolean(sb.ToString());
-                        break;
-                    case 2://isBSUpperの読み込み
-                        read_flag = GetPrivateProfileString("Tenkey", "isBSUpper", "false", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
-                        this.isBSUpper = Convert.ToBoolean(sb.ToString());
-                        break;
-                    case 3://isZeroUnionの読み込み
-                        read_flag = GetPrivateProfileString("Tenkey", "isZeroUnion", "false", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
-                        this.isZeroUnion = Convert.ToBoolean(sb.ToString());
-                        break;
-                    default://isZeroThreeの読み込み
-                        read_flag = GetPrivateProfileString("Tenkey", "isZeroThree", "false", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
-                        this.isZeroThree = Convert.ToBoolean(sb.ToString());
-                        break;
-                }
 
-            }
+            //デバイスIDの読み込み
+            read_flag = GetPrivateProfileString("Tenkey", "deviceId", "none", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
+            this.deviceId = sb.ToString();
+            //isTabの読み込み
+            read_flag = GetPrivateProfileString("Tenkey", "isTab", "false", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
+            this.isTab = Convert.ToBoolean(sb.ToString());
+            //isBSUpperの読み込み
+            read_flag = GetPrivateProfileString("Tenkey", "isBSUpper", "false", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
+            this.isBSUpper = Convert.ToBoolean(sb.ToString());
+            //isZeroUnionの読み込み
+            read_flag = GetPrivateProfileString("Tenkey", "isZeroUnion", "false", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
+            this.isZeroUnion = Convert.ToBoolean(sb.ToString());
+            //isZeroThreeの読み込み
+            read_flag = GetPrivateProfileString("Tenkey", "isZeroThree", "false", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
+            this.isZeroThree = Convert.ToBoolean(sb.ToString());
         }
     }
 
 
 
+
     internal static class Program
     {
-
-        //初回起動時に設定ファイルの読み込みを行います。
-
-
-
-
-
         /// <summary>
         /// アプリケーションのメイン エントリ ポイントです。
         /// </summary>
@@ -133,7 +115,8 @@ namespace GalaFli
                 // 設定ファイルの読み込みが出来るかどうかで分岐
                 //読み込みが出来ない場合はSettingFormを起動する
                 //読み込みが出来た場合はOverlayFormを起動する
-                if (tenkeySettings.deviceId == "none") { //読み込みが出来ないとdeviceIdがnoneになる(コンストラクタ参照)
+                if (tenkeySettings.deviceId == "none")
+                { //読み込みが出来ないとdeviceIdがnoneになる(コンストラクタ参照)
                     new SettingForm().ShowDialog();
                 }
                 else
