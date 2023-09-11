@@ -144,24 +144,4 @@ namespace GalaFli
 
     }
 
-    public class TenkeySettings
-    {
-        public string deviceId { get; set; }
-        public bool isTab { get; set; }
-        public bool isBSUpper { get; set; }
-        public bool isZeroUnion { get; set; }
-        public bool isZeroThree { get; set; }
-
-
-        public TenkeySettings(string deviceId, bool isTab, bool isBSUpper, bool isZeroUnion, bool isZeroThree)
-        {
-            this.deviceId = deviceId;
-            this.isTab = isTab;
-            this.isBSUpper = isBSUpper;
-            this.isZeroUnion = isZeroUnion;
-            this.isZeroThree = isZeroThree;
-
-        }
-    }
-
 }

@@ -5,6 +5,8 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Text;
 using System.Text.Json;
 using System.Threading;
 using System.Timers;
@@ -40,10 +42,65 @@ namespace GalaFli
     }
 
 
+    // デバイスIDとデバイス名を格納するクラス（構造体）
+    public class TenkeySettings
+    {
+
+        //どこでインスタンス化しても読み込めるようにここにDllImportが書いてあります
+        [DllImport("kernel32.dll", EntryPoint = "GetPrivateProfileStringW", CharSet = CharSet.Unicode, SetLastError = true)]
+        static extern uint GetPrivateProfileString(string lpAppName, string lpKeyName, string lpDefault, StringBuilder lpReturnedString, uint nSize, string lpFileName);
+        public string deviceId { get;}//デバイスID
+        public bool isTab { get; set; }//タブキーが左上か
+        public bool isBSUpper { get; set; }//BSキーが上にあるか
+        public bool isZeroUnion { get; set; }//0キーと000キーが一体型か
+        public bool isZeroThree { get; set; }//0キーと000キーが別々か
+        private uint read_flag { get; set; }//読み込みが出来たかどうかのフラグ(外部から呼び出さないけど戻り値で必要なため)
+        //コンストラクタで読み込みを行うためインスタンス化するだけで中身の参照ができる
+        public TenkeySettings()
+        {
+            StringBuilder sb = new StringBuilder(256);//読み込み用のバッファ
+            for (int i = 0; i < 5; i++)
+            {
+                
+                switch (i)
+                {
+                    case 0://デバイスIDの読み込み
+                        read_flag = GetPrivateProfileString("Tenkey", "deviceId", "none", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
+                        this.deviceId = sb.ToString();
+                        break;
+                    case 1://isTabの読み込み
+                        read_flag = GetPrivateProfileString("Tenkey", "isTab", "false", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
+                        this.isTab = Convert.ToBoolean(sb.ToString());
+                        break;
+                    case 2://isBSUpperの読み込み
+                        read_flag = GetPrivateProfileString("Tenkey", "isBSUpper", "false", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
+                        this.isBSUpper = Convert.ToBoolean(sb.ToString());
+                        break;
+                    case 3://isZeroUnionの読み込み
+                        read_flag = GetPrivateProfileString("Tenkey", "isZeroUnion", "false", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
+                        this.isZeroUnion = Convert.ToBoolean(sb.ToString());
+                        break;
+                    default://isZeroThreeの読み込み
+                        read_flag = GetPrivateProfileString("Tenkey", "isZeroThree", "false", sb, Convert.ToUInt32(sb.Capacity), ".\\TenkeySettings.ini");
+                        this.isZeroThree = Convert.ToBoolean(sb.ToString());
+                        break;
+                }
+
+            }
+        }
+    }
+
 
 
     internal static class Program
     {
+
+        //初回起動時に設定ファイルの読み込みを行います。
+
+
+
+
+
         /// <summary>
         /// アプリケーションのメイン エントリ ポイントです。
         /// </summary>
@@ -52,6 +109,8 @@ namespace GalaFli
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            TenkeySettings tenkeySettings = new TenkeySettings();
 
             OverlayForm always_overlay = new OverlayForm();
 
@@ -71,19 +130,36 @@ namespace GalaFli
                 always_overlay.Json_Load(jsonDataTemp);
 
 
-                // OverlayForm を別スレッドで実行
-                Thread overlayThread = new Thread(() =>
+                // 設定ファイルの読み込みが出来るかどうかで分岐
+                //読み込みが出来ない場合はSettingFormを起動する
+                //読み込みが出来た場合はOverlayFormを起動する
+                if (tenkeySettings.deviceId == "none") { //読み込みが出来ないとdeviceIdがnoneになる(コンストラクタ参照)
+                    new SettingForm().ShowDialog();
+                }
+                else
                 {
-                    Application.Run(always_overlay);
-                });
+                    // デバッグ用(読み込み確認)
+                    Debug.WriteLine(tenkeySettings.deviceId);
+                    Debug.WriteLine(tenkeySettings.isTab);
+                    Debug.WriteLine(tenkeySettings.isBSUpper);
+                    Debug.WriteLine(tenkeySettings.isZeroUnion);
+                    Debug.WriteLine(tenkeySettings.isZeroThree);
 
-                
 
-                overlayThread.Start();
-                //labelChange.Start();
+                    // OverlayForm を別スレッドで実行
+                    Thread overlayThread = new Thread(() =>
+                    {
+                        Application.Run(always_overlay);
+                    });
 
-                // Tasktray をメインスレッドで実行
-                Application.Run(new Tasktray(always_overlay));
+
+
+                    overlayThread.Start();
+                    //labelChange.Start();
+
+                    // Tasktray をメインスレッドで実行
+                    Application.Run(new Tasktray(always_overlay));
+                }
 
 
             }
