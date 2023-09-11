@@ -112,14 +112,7 @@ namespace GalaFli
             this.menuItem1 = new System.Windows.Forms.MenuItem();
 
 
-            // Initialize contextMenu1
-            this.contextMenu1.MenuItems.AddRange(
-                        new System.Windows.Forms.MenuItem[] { this.menuItem1 });
 
-            // Initialize menuItem1
-            this.menuItem1.Index = 0;
-            this.menuItem1.Text = "E&xit";
-            this.menuItem1.Click += new System.EventHandler(this.menuItem1_Click);
 
             // Create the NotifyIcon.
             this.notifyIcon1 = new NotifyIcon();
@@ -137,20 +130,23 @@ namespace GalaFli
             notifyIcon1.Text = "NotifyIconテスト";
 
 
-
-            // コンテキストメニュー
             ContextMenuStrip contextMenuStrip = new ContextMenuStrip();
-            ToolStripMenuItem toolStripMenuItem = new ToolStripMenuItem();
-            toolStripMenuItem.Text = "&終了";
-            toolStripMenuItem.Click += menuItem1_Click;
-            contextMenuStrip.Items.Add(toolStripMenuItem);
 
-            // デバッグ用
-            ContextMenuStrip DebugcontextMenuStrip = new ContextMenuStrip();
-            ToolStripMenuItem DebugtoolStripMenuItem = new ToolStripMenuItem();
-            DebugtoolStripMenuItem.Text = "&デバッグ";
-            //DebugtoolStripMenuItem.Click += new EventHandler(debug_Click(debug_OverlayForm));
-            contextMenuStrip.Items.Add(DebugtoolStripMenuItem);
+
+            // 設定
+            ToolStripMenuItem settingItem = new ToolStripMenuItem();
+            settingItem.Text = "&設定";
+            settingItem.Click += SettingForm_Click;
+            contextMenuStrip.Items.Add(settingItem);
+
+            // アプリを終了コンテキストメニュー
+
+            ToolStripMenuItem EixtItem = new ToolStripMenuItem();
+            EixtItem.Text = "&終了";
+            EixtItem.Click += EixtApp_Click;
+            contextMenuStrip.Items.Add(EixtItem);
+
+
 
 
             notifyIcon1.ContextMenuStrip = contextMenuStrip;
@@ -184,10 +180,17 @@ namespace GalaFli
         //    // Activate the form.
         //    this.Activate();
         //}
-        private void menuItem1_Click(object Sender, EventArgs e)
+        private void EixtApp_Click(object Sender, EventArgs e)
         {
             // Close the form, which closes the application.
             Application.Exit();
+
+        }
+
+        private void SettingForm_Click(object Sender, EventArgs e)
+        {
+            // ハラサワくんにフォーム起動のコード書いてもらう。
+            new SettingForm().ShowDialog();
 
         }
 

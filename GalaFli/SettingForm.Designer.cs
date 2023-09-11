@@ -1,4 +1,4 @@
-﻿namespace SettingForm
+﻿namespace GalaFli
 {
     partial class SettingForm
     {

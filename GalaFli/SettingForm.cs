@@ -8,11 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Management;
-using System;
 using System.Runtime.InteropServices;
 
 
-namespace SettingForm
+namespace GalaFli
 {
     public partial class SettingForm : Form
     {
@@ -79,9 +78,9 @@ namespace SettingForm
             ret[2] = WritePrivateProfileString("Tenkey", "BS", isTabNumlock.Checked.ToString(), ".\\TenkeySettings.ini");
             ret[3] = WritePrivateProfileString("Tenkey", "isThreeZeros", isIntegration.Checked.ToString(), ".\\TenkeySettings.ini");
             ret[4] = WritePrivateProfileString("Tenkey", "isIntegrateZeros", isThreeZeros.Checked.ToString(), ".\\TenkeySettings.ini");
-            
 
-            this.Close();
+
+            Application.Restart();
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -111,7 +110,7 @@ namespace SettingForm
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Restart();
         }
 
         private void checkBack_CheckedChanged(object sender, EventArgs e)
