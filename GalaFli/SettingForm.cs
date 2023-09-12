@@ -115,12 +115,73 @@ namespace GalaFli
 
         private void checkBack_CheckedChanged(object sender, EventArgs e)
         {
-            
+            if (T_B_BS.Visible)
+            {
+                T_B_BS.Visible = false;
+                T_B_Plus.Visible = false;
+            }
+            else
+            {
+                T_B_BS.Visible = true;
+                T_B_Plus.Visible = true;
+            }
         }
 
         private void isTabNumlock_CheckedChanged(object sender, EventArgs e)
         {
+            if(T_Tab.Visible)T_Tab.Visible = false;
+            else T_Tab.Visible = true;
+        }
 
+        private void T_B_BS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void isIntegration_CheckedChanged(object sender, EventArgs e)
+        {
+            if (isIntegration.Checked)
+            {
+                if (isThreeZeros.Checked)T_B_ThreeZeros.Visible = true;
+                else T_B_twoZeros.Visible = true;
+            }
+            else
+            {
+                if (isThreeZeros.Checked)
+                {
+                    T_A_ThreeZeros.Visible = true;
+                    T_B_ThreeZeros.Visible = false;
+                    T_B_twoZeros.Visible = false;
+                }
+                else
+                {
+                    T_A_ThreeZeros.Visible = false;
+                    T_B_ThreeZeros.Visible = false;
+                    T_B_twoZeros.Visible = false;
+                }
+            }
+        }
+
+        private void isThreeZeros_CheckedChanged(object sender, EventArgs e)
+        {
+            if(isThreeZeros.Checked)
+            {
+                if (isIntegration.Checked)
+                {
+                    T_B_ThreeZeros.Visible = true;
+                    T_B_twoZeros.Visible = false;
+                }
+                else T_A_ThreeZeros.Visible = true;
+            }
+            else
+            {
+                if(isIntegration.Checked)
+                {
+                    T_B_ThreeZeros.Visible = false;
+                    T_B_twoZeros.Visible = true;
+                }
+                else T_A_ThreeZeros.Visible = false;
+            }
         }
     }
 
