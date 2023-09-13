@@ -53,8 +53,8 @@
             // 
             // T_tab
             // 
-            this.T_tab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T_tab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_tab.BackColor = System.Drawing.SystemColors.Control;
             this.T_tab.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -65,14 +65,14 @@
             this.T_tab.Name = "T_tab";
             this.T_tab.Size = new System.Drawing.Size(40, 40);
             this.T_tab.TabIndex = 1;
-            this.T_tab.Text = "Tab";
+            this.T_tab.Text = "NL";
             this.T_tab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.T_tab, "Tabキー");
             // 
             // T_slash
             // 
-            this.T_slash.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T_slash.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_slash.BackColor = System.Drawing.SystemColors.Control;
             this.T_slash.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -83,14 +83,14 @@
             this.T_slash.Name = "T_slash";
             this.T_slash.Size = new System.Drawing.Size(40, 40);
             this.T_slash.TabIndex = 2;
-            this.T_slash.Text = "/";
+            this.T_slash.Text = "記号";
             this.T_slash.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.T_slash, "スラッシュ(除算)");
             // 
             // T_asterisk
             // 
-            this.T_asterisk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T_asterisk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_asterisk.BackColor = System.Drawing.SystemColors.Control;
             this.T_asterisk.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -101,14 +101,14 @@
             this.T_asterisk.Name = "T_asterisk";
             this.T_asterisk.Size = new System.Drawing.Size(40, 40);
             this.T_asterisk.TabIndex = 3;
-            this.T_asterisk.Text = "*";
+            this.T_asterisk.Text = "Tab";
             this.T_asterisk.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.T_asterisk, "アスタリスク(乗算)");
             // 
             // T_minus
             // 
-            this.T_minus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T_minus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_minus.BackColor = System.Drawing.SystemColors.Control;
             this.T_minus.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -119,14 +119,14 @@
             this.T_minus.Name = "T_minus";
             this.T_minus.Size = new System.Drawing.Size(40, 40);
             this.T_minus.TabIndex = 4;
-            this.T_minus.Text = "-";
+            this.T_minus.Text = "Sp";
             this.T_minus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.T_minus, "ハイフン(減算)");
             // 
             // T7
             // 
-            this.T7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T7.BackColor = System.Drawing.SystemColors.Control;
             this.T7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -137,13 +137,13 @@
             this.T7.Name = "T7";
             this.T7.Size = new System.Drawing.Size(40, 40);
             this.T7.TabIndex = 5;
-            this.T7.Text = "7";
+            this.T7.Text = "あ";
             this.T7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T8
             // 
-            this.T8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T8.BackColor = System.Drawing.SystemColors.Control;
             this.T8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -154,13 +154,13 @@
             this.T8.Name = "T8";
             this.T8.Size = new System.Drawing.Size(40, 40);
             this.T8.TabIndex = 6;
-            this.T8.Text = "8";
+            this.T8.Text = "か";
             this.T8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T9
             // 
-            this.T9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T9.BackColor = System.Drawing.SystemColors.Control;
             this.T9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -171,13 +171,13 @@
             this.T9.Name = "T9";
             this.T9.Size = new System.Drawing.Size(40, 40);
             this.T9.TabIndex = 7;
-            this.T9.Text = "9";
+            this.T9.Text = "さ";
             this.T9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T_plus
             // 
-            this.T_plus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T_plus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_plus.BackColor = System.Drawing.SystemColors.Control;
             this.T_plus.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -188,14 +188,14 @@
             this.T_plus.Name = "T_plus";
             this.T_plus.Size = new System.Drawing.Size(40, 40);
             this.T_plus.TabIndex = 8;
-            this.T_plus.Text = "+";
+            this.T_plus.Text = "Fn";
             this.T_plus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.T_plus, "プラス(加算)");
             // 
             // T4
             // 
-            this.T4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T4.BackColor = System.Drawing.SystemColors.Control;
             this.T4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -206,13 +206,13 @@
             this.T4.Name = "T4";
             this.T4.Size = new System.Drawing.Size(40, 40);
             this.T4.TabIndex = 9;
-            this.T4.Text = "4";
+            this.T4.Text = "た";
             this.T4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T5
             // 
-            this.T5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T5.BackColor = System.Drawing.SystemColors.Control;
             this.T5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -223,13 +223,13 @@
             this.T5.Name = "T5";
             this.T5.Size = new System.Drawing.Size(40, 40);
             this.T5.TabIndex = 10;
-            this.T5.Text = "5";
+            this.T5.Text = "な";
             this.T5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T6
             // 
-            this.T6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T6.BackColor = System.Drawing.SystemColors.Control;
             this.T6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -240,13 +240,13 @@
             this.T6.Name = "T6";
             this.T6.Size = new System.Drawing.Size(40, 40);
             this.T6.TabIndex = 11;
-            this.T6.Text = "6";
+            this.T6.Text = "は";
             this.T6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T_bs
             // 
-            this.T_bs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T_bs.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_bs.BackColor = System.Drawing.SystemColors.Control;
             this.T_bs.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -263,8 +263,8 @@
             // 
             // T1
             // 
-            this.T1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T1.BackColor = System.Drawing.SystemColors.Control;
             this.T1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -275,13 +275,13 @@
             this.T1.Name = "T1";
             this.T1.Size = new System.Drawing.Size(40, 40);
             this.T1.TabIndex = 13;
-            this.T1.Text = "1";
+            this.T1.Text = "ま";
             this.T1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T2
             // 
-            this.T2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T2.BackColor = System.Drawing.SystemColors.Control;
             this.T2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -292,13 +292,13 @@
             this.T2.Name = "T2";
             this.T2.Size = new System.Drawing.Size(40, 40);
             this.T2.TabIndex = 14;
-            this.T2.Text = "2";
+            this.T2.Text = "や";
             this.T2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T3
             // 
-            this.T3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T3.BackColor = System.Drawing.SystemColors.Control;
             this.T3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -309,13 +309,13 @@
             this.T3.Name = "T3";
             this.T3.Size = new System.Drawing.Size(40, 40);
             this.T3.TabIndex = 15;
-            this.T3.Text = "3";
+            this.T3.Text = "ら";
             this.T3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T_enter
             // 
-            this.T_enter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T_enter.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_enter.BackColor = System.Drawing.SystemColors.Control;
             this.T_enter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -332,8 +332,8 @@
             // 
             // T0
             // 
-            this.T0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T0.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T0.BackColor = System.Drawing.SystemColors.Control;
             this.T0.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -344,13 +344,13 @@
             this.T0.Name = "T0";
             this.T0.Size = new System.Drawing.Size(40, 40);
             this.T0.TabIndex = 17;
-            this.T0.Text = "0";
+            this.T0.Text = "Sc";
             this.T0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T000
             // 
-            this.T000.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T000.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T000.BackColor = System.Drawing.SystemColors.Control;
             this.T000.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -361,13 +361,13 @@
             this.T000.Name = "T000";
             this.T000.Size = new System.Drawing.Size(40, 40);
             this.T000.TabIndex = 18;
-            this.T000.Text = "000";
+            this.T000.Text = "わ";
             this.T000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T_dot
             // 
-            this.T_dot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.T_dot.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.T_dot.BackColor = System.Drawing.SystemColors.Control;
             this.T_dot.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -378,7 +378,7 @@
             this.T_dot.Name = "T_dot";
             this.T_dot.Size = new System.Drawing.Size(40, 40);
             this.T_dot.TabIndex = 19;
-            this.T_dot.Text = ".";
+            this.T_dot.Text = "、";
             this.T_dot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // toolTip1
