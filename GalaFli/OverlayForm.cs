@@ -115,6 +115,8 @@ namespace GalaFli
         public OverlayForm()
         {
 
+
+
             TransparencyKey = Color.Gray;
             StartPosition = FormStartPosition.Manual;
 
@@ -138,6 +140,10 @@ namespace GalaFli
             TopMost = true;
 
             InitializeComponent();
+
+            //サンセットがコピペするところ
+
+
         }
 
         protected override CreateParams CreateParams //クリック透過してくれるやつ
