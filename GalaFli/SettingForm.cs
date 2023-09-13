@@ -34,7 +34,7 @@ namespace GalaFli
         private void Form1_Load(object sender, EventArgs e)
         {
             // USBデバイス情報を取得するためのクエリを作成
-            string query = "SELECT * FROM Win32_Keyboard WHERE ConfigManagerErrorCode = 0 AND DeviceID Like 'HID%'";
+            string query = "SELECT * FROM Win32_Keyboard";
 
             ManagementObjectSearcher searcher = new ManagementObjectSearcher(query);
             ManagementObjectCollection usbDevices = searcher.Get();

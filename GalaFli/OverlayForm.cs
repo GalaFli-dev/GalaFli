@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Drawing.Text;
 using System.Diagnostics;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Interceptor;
 
 namespace GalaFli
 {
@@ -24,6 +25,9 @@ namespace GalaFli
         Statedata currentState = new Statedata();
         //デフォルトの画面状態
         Statedata basisState = new Statedata();
+
+        //テンキー設定のインタンス
+        TenkeySettings tenkeySettings = new TenkeySettings();
 
         //仮想キーコードを使うための宣言↓↓
         // マウスイベント(mouse_eventの引数と同様のデータ)
@@ -111,6 +115,9 @@ namespace GalaFli
 
         public Label lblMessage;
 
+        static Timer zeroKeyTimer = new Timer(30);
+        static int zeroKeyPressCount;
+        static string sendText;
 
         public OverlayForm()
         {
@@ -138,6 +145,204 @@ namespace GalaFli
             TopMost = true;
 
             InitializeComponent();
+
+            const int ID_BUFFER_SIZE = 500;
+            static IntPtr context = InterceptionDriver.CreateContext();
+
+            InterceptionDriver.SetFilter(context, InterceptionDriver.IsKeyboard, (int)KeyboardFilterMode.All);
+
+            zeroKeyTimer.Elapsed += ZeroKeyTimerElapsed;
+            zeroKeyTimer.AutoReset = false;
+
+            while(true)
+            {
+                int device = InterceptionDriver.Wait(context);
+
+                Stroke stroke = new Stroke();
+                InterceptionDriver.Receive(context, device, ref stroke, 1);
+
+                IntPtr idBuffer = Marshal.AllocHGlobal(ID_BUFFER_SIZE);
+                int result = InterceptionDriver.GetHardwareId(context, device, idBuffer, ID_BUFFER_SIZE);
+                string id = "";
+
+                if (result > 0)
+                {
+                    char currentChar;
+                    int offset = 0;
+
+                    do
+                    {
+                        currentChar = (char)Marshal.ReadByte(idBuffer, offset);
+
+                        if (currentChar != '\0')
+                        {
+                            id += currentChar;
+                            offset += sizeof(char);
+                        }
+
+                    } while (currentChar != '\0');
+
+                }
+
+                if (id.Equals(tenkeySettings.deviceId) && stroke.Key.Code != Keys.NumLock)
+                {
+                    if (stroke.Key.State.ToString().Contains("Up"))
+                    {
+                        if (stroke.Key.Code == Keys.Numpad0 || stroke.Key.Code == Keys.Insert)
+                        {
+                            // 0,00,000キーが押されたらタイマーをスタート
+                            StartZeroKeyTimer();
+                        }
+                        else
+                        {
+                            sendText = GetSendKeyName(stroke.Key.Code.ToString());
+                            //内部処理関数
+                            Internalprocess(sendText);
+                        }
+                    }
+                }
+                else
+                {
+                    InterceptionDriver.Send(context, device, ref stroke, 1);
+                }
+
+                Marshal.FreeHGlobal(idBuffer);
+            }
+
+            InterceptionDriver.DestroyContext(context);
+        }
+
+        //30ミリ秒のタイマー
+        private static void StartZeroKeyTimer()
+        {
+            if (zeroKeyPressCount == 0)
+            {
+                zeroKeyPressCount = 1;
+            }
+            else
+            {
+                zeroKeyPressCount++;
+            }
+
+            if (zeroKeyTimer.Enabled)
+            {
+                zeroKeyTimer.Stop();
+            }
+
+            zeroKeyTimer.Start();
+        }
+
+        //タイマーの時間内に0が送信された数を数えてキーを判別
+        private static void ZeroKeyTimerElapsed(object sender, ElapsedEventArgs e)
+        {
+            if (zeroKeyPressCount == 1)
+            {
+                sendText = GetSendKeyName(Keys.Numpad0.ToString());
+                Internalprocess(sendText);
+            }
+            else if (zeroKeyPressCount == 2)
+            {
+                sendText = GetSendKeyName("Numpad00");
+                Internalprocess(sendText);
+            }
+            else if (zeroKeyPressCount == 3)
+            {
+                sendText = GetSendKeyName("Numpad000");
+                Internalprocess(sendText);
+            }
+
+            zeroKeyPressCount = 0;
+        }
+
+        //各種テンキーに対応させるやつ
+        private static string GetSendKeyName(string keyCode)
+        {
+            //設定のiniから読み込む予定
+            Dictionary<string, bool> type = new Dictionary<string, bool>()
+            {
+                {"isTab", tenkeySettings.isTab}, {"isBsUpper", tenkeySettings.isBSUpper}, {"isZeroUnion", tenkeySettings.isZeroUnion}, {"isZeroThree", tenkeySettings.isZeroThree}
+            };
+
+            if (keyCode.Equals(Keys.Tab.ToString()) && type["isTab"])
+            {
+                return "T_tab";
+            }
+            else if (keyCode.Equals(Keys.NumpadDivide.ToString()) || keyCode.Equals(Keys.ForwardSlashQuestionMark.ToString()))
+            {
+                return "T_slash";
+            }
+            else if (keyCode.Equals(Keys.NumpadAsterisk.ToString()) || keyCode.Equals(Keys.PrintScreen.ToString()))
+            {
+                return "T_asterisk";
+            }
+            else if ((keyCode.Equals(Keys.NumpadMinus.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Keys.Backspace.ToString()) && type["isBsUpper"]))
+            {
+                return "T_minus";
+            }
+            else if (keyCode.Equals(Keys.Numpad7.ToString()) || keyCode.Equals(Keys.Home.ToString()))
+            {
+                return "T7";
+            }
+            else if (keyCode.Equals(Keys.Numpad8.ToString()) || keyCode.Equals(Keys.Up.ToString()))
+            {
+                return "T8";
+            }
+            else if (keyCode.Equals(Keys.Numpad9.ToString()) || keyCode.Equals(Keys.PageUp.ToString()))
+            {
+                return "T9";
+            }
+            else if ((keyCode.Equals(Keys.NumpadPlus.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Keys.NumpadMinus.ToString()) && type["isBsUpper"]))
+            {
+                return "T_plus";
+            }
+            else if (keyCode.Equals(Keys.Numpad4.ToString()) || keyCode.Equals(Keys.Left.ToString()))
+            {
+                return "T4";
+            }
+            else if (keyCode.Equals(Keys.Numpad5.ToString()))
+            {
+                return "T5";
+            }
+            else if (keyCode.Equals(Keys.Numpad6.ToString()) || keyCode.Equals(Keys.Right.ToString()))
+            {
+                return "T6";
+            }
+            else if ((keyCode.Equals(Keys.Backspace.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Keys.NumpadPlus.ToString()) && type["isBsUpper"]))
+            {
+                return "T_bs";
+            }
+            else if (keyCode.Equals(Keys.Numpad1.ToString()) || keyCode.Equals(Keys.End.ToString()))
+            {
+                return "T1";
+            }
+            else if (keyCode.Equals(Keys.Numpad2.ToString()) || keyCode.Equals(Keys.Down.ToString()))
+            {
+                return "T2";
+            }
+            else if (keyCode.Equals(Keys.Numpad3.ToString()) || keyCode.Equals(Keys.PageDown.ToString()))
+            {
+                return "T3";
+            }
+            else if (keyCode.Equals(Keys.NumpadEnter.ToString()) || keyCode.Equals(Keys.Enter.ToString()))
+            {
+                return "T_enter";
+            }
+            else if ((keyCode.Equals(Keys.Numpad0.ToString()) && !type["isZeroUnion"]) || (keyCode.Equals(Keys.Insert.ToString()) && !type["isZeroUnion"]))
+            {
+                return "T0";
+            }
+            else if ((keyCode.Equals("Numpad000") && type["isZeroThree"]) || (keyCode.Equals("Numpad00") && !type["isZeroThree"]) || (keyCode.Equals(Keys.Numpad0.ToString()) && type["isZeroUnion"]) || (keyCode.Equals(Keys.Insert.ToString()) && type["isZeroUnion"]))
+            {
+                return "T000";
+            }
+            else if (keyCode.Equals(Keys.Delete.ToString()))
+            {
+                return "T_dot";
+            }
+            else
+            {
+                return "";
+            }
         }
 
         protected override CreateParams CreateParams //クリック透過してくれるやつ
