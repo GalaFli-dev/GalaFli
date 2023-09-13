@@ -12,6 +12,7 @@ using System.Drawing.Text;
 using System.Diagnostics;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Interceptor;
+using System.Timers;
 
 namespace GalaFli
 {
@@ -122,9 +123,9 @@ namespace GalaFli
 
         public Label lblMessage;
 
-        static Timer zeroKeyTimer = new Timer(30);
+        static System.Timers.Timer zeroKeyTimer = new System.Timers.Timer(30);
         static int zeroKeyPressCount;
-        static string sendText;
+        string sendText = "";
 
         public OverlayForm()
         {
@@ -156,7 +157,7 @@ namespace GalaFli
             InitializeComponent();
 
             const int ID_BUFFER_SIZE = 500;
-            static IntPtr context = InterceptionDriver.CreateContext();
+            IntPtr context = InterceptionDriver.CreateContext();
 
             InterceptionDriver.SetFilter(context, InterceptionDriver.IsKeyboard, (int)KeyboardFilterMode.All);
 
@@ -193,11 +194,11 @@ namespace GalaFli
 
                 }
 
-                if (id.Equals(tenkeySettings.deviceId) && stroke.Key.Code != Keys.NumLock)
+                if (id.Equals(tenkeySettings.deviceId) && stroke.Key.Code != Interceptor.Keys.NumLock)
                 {
                     if (stroke.Key.State.ToString().Contains("Up"))
                     {
-                        if (stroke.Key.Code == Keys.Numpad0 || stroke.Key.Code == Keys.Insert)
+                        if (stroke.Key.Code == Interceptor.Keys.Numpad0 || stroke.Key.Code == Interceptor.Keys.Insert)
                         {
                             // 0,00,000キーが押されたらタイマーをスタート
                             StartZeroKeyTimer();
@@ -206,7 +207,7 @@ namespace GalaFli
                         {
                             sendText = GetSendKeyName(stroke.Key.Code.ToString());
                             //内部処理関数
-                            Internalprocess(sendText);
+                            InternalProcess(sendText);
                         }
                     }
                 }
@@ -242,29 +243,29 @@ namespace GalaFli
         }
 
         //タイマーの時間内に0が送信された数を数えてキーを判別
-        private static void ZeroKeyTimerElapsed(object sender, ElapsedEventArgs e)
+        private void ZeroKeyTimerElapsed(object sender, ElapsedEventArgs e)
         {
             if (zeroKeyPressCount == 1)
             {
-                sendText = GetSendKeyName(Keys.Numpad0.ToString());
-                Internalprocess(sendText);
+                sendText = GetSendKeyName(Interceptor.Keys.Numpad0.ToString());
+                InternalProcess(sendText);
             }
             else if (zeroKeyPressCount == 2)
             {
                 sendText = GetSendKeyName("Numpad00");
-                Internalprocess(sendText);
+                InternalProcess(sendText);
             }
             else if (zeroKeyPressCount == 3)
             {
                 sendText = GetSendKeyName("Numpad000");
-                Internalprocess(sendText);
+                InternalProcess(sendText);
             }
 
             zeroKeyPressCount = 0;
         }
 
         //各種テンキーに対応させるやつ
-        private static string GetSendKeyName(string keyCode)
+        private string GetSendKeyName(string keyCode)
         {
             //設定のiniから読み込む予定
             Dictionary<string, bool> type = new Dictionary<string, bool>()
@@ -272,79 +273,79 @@ namespace GalaFli
                 {"isTab", tenkeySettings.isTab}, {"isBsUpper", tenkeySettings.isBSUpper}, {"isZeroUnion", tenkeySettings.isZeroUnion}, {"isZeroThree", tenkeySettings.isZeroThree}
             };
 
-            if (keyCode.Equals(Keys.Tab.ToString()) && type["isTab"])
+            if (keyCode.Equals(Interceptor.Keys.Tab.ToString()) && type["isTab"])
             {
                 return "T_tab";
             }
-            else if (keyCode.Equals(Keys.NumpadDivide.ToString()) || keyCode.Equals(Keys.ForwardSlashQuestionMark.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.NumpadDivide.ToString()) || keyCode.Equals(Interceptor.Keys.ForwardSlashQuestionMark.ToString()))
             {
                 return "T_slash";
             }
-            else if (keyCode.Equals(Keys.NumpadAsterisk.ToString()) || keyCode.Equals(Keys.PrintScreen.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.NumpadAsterisk.ToString()) || keyCode.Equals(Interceptor.Keys.PrintScreen.ToString()))
             {
                 return "T_asterisk";
             }
-            else if ((keyCode.Equals(Keys.NumpadMinus.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Keys.Backspace.ToString()) && type["isBsUpper"]))
+            else if ((keyCode.Equals(Interceptor.Keys.NumpadMinus.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Interceptor.Keys.Backspace.ToString()) && type["isBsUpper"]))
             {
                 return "T_minus";
             }
-            else if (keyCode.Equals(Keys.Numpad7.ToString()) || keyCode.Equals(Keys.Home.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.Numpad7.ToString()) || keyCode.Equals(Interceptor.Keys.Home.ToString()))
             {
                 return "T7";
             }
-            else if (keyCode.Equals(Keys.Numpad8.ToString()) || keyCode.Equals(Keys.Up.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.Numpad8.ToString()) || keyCode.Equals(Interceptor.Keys.Up.ToString()))
             {
                 return "T8";
             }
-            else if (keyCode.Equals(Keys.Numpad9.ToString()) || keyCode.Equals(Keys.PageUp.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.Numpad9.ToString()) || keyCode.Equals(Interceptor.Keys.PageUp.ToString()))
             {
                 return "T9";
             }
-            else if ((keyCode.Equals(Keys.NumpadPlus.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Keys.NumpadMinus.ToString()) && type["isBsUpper"]))
+            else if ((keyCode.Equals(Interceptor.Keys.NumpadPlus.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Interceptor.Keys.NumpadMinus.ToString()) && type["isBsUpper"]))
             {
                 return "T_plus";
             }
-            else if (keyCode.Equals(Keys.Numpad4.ToString()) || keyCode.Equals(Keys.Left.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.Numpad4.ToString()) || keyCode.Equals(Interceptor.Keys.Left.ToString()))
             {
                 return "T4";
             }
-            else if (keyCode.Equals(Keys.Numpad5.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.Numpad5.ToString()))
             {
                 return "T5";
             }
-            else if (keyCode.Equals(Keys.Numpad6.ToString()) || keyCode.Equals(Keys.Right.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.Numpad6.ToString()) || keyCode.Equals(Interceptor.Keys.Right.ToString()))
             {
                 return "T6";
             }
-            else if ((keyCode.Equals(Keys.Backspace.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Keys.NumpadPlus.ToString()) && type["isBsUpper"]))
+            else if ((keyCode.Equals(Interceptor.Keys.Backspace.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Interceptor.Keys.NumpadPlus.ToString()) && type["isBsUpper"]))
             {
                 return "T_bs";
             }
-            else if (keyCode.Equals(Keys.Numpad1.ToString()) || keyCode.Equals(Keys.End.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.Numpad1.ToString()) || keyCode.Equals(Interceptor.Keys.End.ToString()))
             {
                 return "T1";
             }
-            else if (keyCode.Equals(Keys.Numpad2.ToString()) || keyCode.Equals(Keys.Down.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.Numpad2.ToString()) || keyCode.Equals(Interceptor.Keys.Down.ToString()))
             {
                 return "T2";
             }
-            else if (keyCode.Equals(Keys.Numpad3.ToString()) || keyCode.Equals(Keys.PageDown.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.Numpad3.ToString()) || keyCode.Equals(Interceptor.Keys.PageDown.ToString()))
             {
                 return "T3";
             }
-            else if (keyCode.Equals(Keys.NumpadEnter.ToString()) || keyCode.Equals(Keys.Enter.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.NumpadEnter.ToString()) || keyCode.Equals(Interceptor.Keys.Enter.ToString()))
             {
                 return "T_enter";
             }
-            else if ((keyCode.Equals(Keys.Numpad0.ToString()) && !type["isZeroUnion"]) || (keyCode.Equals(Keys.Insert.ToString()) && !type["isZeroUnion"]))
+            else if ((keyCode.Equals(Interceptor.Keys.Numpad0.ToString()) && !type["isZeroUnion"]) || (keyCode.Equals(Interceptor.Keys.Insert.ToString()) && !type["isZeroUnion"]))
             {
                 return "T0";
             }
-            else if ((keyCode.Equals("Numpad000") && type["isZeroThree"]) || (keyCode.Equals("Numpad00") && !type["isZeroThree"]) || (keyCode.Equals(Keys.Numpad0.ToString()) && type["isZeroUnion"]) || (keyCode.Equals(Keys.Insert.ToString()) && type["isZeroUnion"]))
+            else if ((keyCode.Equals("Numpad000") && type["isZeroThree"]) || (keyCode.Equals("Numpad00") && !type["isZeroThree"]) || (keyCode.Equals(Interceptor.Keys.Numpad0.ToString()) && type["isZeroUnion"]) || (keyCode.Equals(Interceptor.Keys.Insert.ToString()) && type["isZeroUnion"]))
             {
                 return "T000";
             }
-            else if (keyCode.Equals(Keys.Delete.ToString()))
+            else if (keyCode.Equals(Interceptor.Keys.Delete.ToString()))
             {
                 return "T_dot";
             }
@@ -399,7 +400,7 @@ namespace GalaFli
 
 
         //内部処理のメイン関数
-        public void Internalprocess(string keyCode)
+        public void InternalProcess(string keyCode)
         {
 
             //keysの中から、受け取ったkeyの場所を探し、その添え字を格納する変数
@@ -691,7 +692,7 @@ namespace GalaFli
             string keyCode = "T9";
 
             //内部処理起動
-            Internalprocess(keyCode);
+            InternalProcess(keyCode);
 
         }
     }
