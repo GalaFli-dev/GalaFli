@@ -123,8 +123,11 @@ namespace GalaFli
 
         public Label lblMessage;
 
+        //0の数を判定する際に使用する30ミリ秒のタイマー
         static System.Timers.Timer zeroKeyTimer = new System.Timers.Timer(30);
+        //0が押された回数を保持する変数
         static int zeroKeyPressCount;
+        //入力受付から内部処理に渡す文字列
         string sendText = "";
 
         public OverlayForm()
@@ -156,21 +159,29 @@ namespace GalaFli
 
             InitializeComponent();
 
+            //デバイスIDを格納するポインタのサイズ
             const int ID_BUFFER_SIZE = 500;
+            //Interceptionのドライバと接続して使用できるようにする
             IntPtr context = InterceptionDriver.CreateContext();
 
+            //すべてのキーボード入力を受け付ける(マウスは除外)
             InterceptionDriver.SetFilter(context, InterceptionDriver.IsKeyboard, (int)KeyboardFilterMode.All);
 
+            //0の数を判定する際に使用するタイマーの設定
             zeroKeyTimer.Elapsed += ZeroKeyTimerElapsed;
             zeroKeyTimer.AutoReset = false;
 
+            //入力を受け付けて処理する無限ループ
             while(true)
             {
+                //ここで入力を受け付ける
                 int device = InterceptionDriver.Wait(context);
 
+                //入力されたキーコードやキーのステータスを取得
                 Stroke stroke = new Stroke();
                 InterceptionDriver.Receive(context, device, ref stroke, 1);
 
+                //入力されたデバイスのIDを取得
                 IntPtr idBuffer = Marshal.AllocHGlobal(ID_BUFFER_SIZE);
                 int result = InterceptionDriver.GetHardwareId(context, device, idBuffer, ID_BUFFER_SIZE);
                 string id = "";
@@ -194,6 +205,7 @@ namespace GalaFli
 
                 }
 
+                //指定されたテンキーの入力かつNumLock以外の入力を処理し、処理されないものはOSに再送信
                 if (id.Equals(tenkeySettings.deviceId) && stroke.Key.Code != Interceptor.Keys.NumLock)
                 {
                     if (stroke.Key.State.ToString().Contains("Up"))
