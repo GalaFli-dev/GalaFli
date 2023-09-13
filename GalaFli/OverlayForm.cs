@@ -27,8 +27,7 @@ namespace GalaFli
         //デフォルトの画面状態
         Statedata basisState = new Statedata();
 
-        //テンキー設定のインタンス
-        TenkeySettings tenkeySettings = new TenkeySettings();
+        
 
         //仮想キーコードを使うための宣言↓↓
         // マウスイベント(mouse_eventの引数と同様のデータ)
@@ -123,12 +122,7 @@ namespace GalaFli
 
         public Label lblMessage;
 
-        //0の数を判定する際に使用する30ミリ秒のタイマー
-        static System.Timers.Timer zeroKeyTimer = new System.Timers.Timer(30);
-        //0が押された回数を保持する変数
-        static int zeroKeyPressCount;
-        //入力受付から内部処理に渡す文字列
-        string sendText = "";
+        
 
         public OverlayForm()
         {
@@ -159,213 +153,10 @@ namespace GalaFli
 
             InitializeComponent();
 
-            //デバイスIDを格納するポインタのサイズ
-            const int ID_BUFFER_SIZE = 500;
-            //Interceptionのドライバと接続して使用できるようにする
-            IntPtr context = InterceptionDriver.CreateContext();
-
-            //すべてのキーボード入力を受け付ける(マウスは除外)
-            InterceptionDriver.SetFilter(context, InterceptionDriver.IsKeyboard, (int)KeyboardFilterMode.All);
-
-            //0の数を判定する際に使用するタイマーの設定
-            zeroKeyTimer.Elapsed += ZeroKeyTimerElapsed;
-            zeroKeyTimer.AutoReset = false;
-
-            //入力を受け付けて処理する無限ループ
-            while(true)
-            {
-                //ここで入力を受け付ける
-                int device = InterceptionDriver.Wait(context);
-
-                //入力されたキーコードやキーのステータスを取得
-                Stroke stroke = new Stroke();
-                InterceptionDriver.Receive(context, device, ref stroke, 1);
-
-                //入力されたデバイスのIDを取得
-                IntPtr idBuffer = Marshal.AllocHGlobal(ID_BUFFER_SIZE);
-                int result = InterceptionDriver.GetHardwareId(context, device, idBuffer, ID_BUFFER_SIZE);
-                string id = "";
-
-                if (result > 0)
-                {
-                    char currentChar;
-                    int offset = 0;
-
-                    do
-                    {
-                        currentChar = (char)Marshal.ReadByte(idBuffer, offset);
-
-                        if (currentChar != '\0')
-                        {
-                            id += currentChar;
-                            offset += sizeof(char);
-                        }
-
-                    } while (currentChar != '\0');
-
-                }
-
-                //指定されたテンキーの入力かつNumLock以外の入力を処理し、処理されないものはOSに再送信
-                if (id.Equals(tenkeySettings.deviceId) && stroke.Key.Code != Interceptor.Keys.NumLock)
-                {
-                    if (stroke.Key.State.ToString().Contains("Up"))
-                    {
-                        if (stroke.Key.Code == Interceptor.Keys.Numpad0 || stroke.Key.Code == Interceptor.Keys.Insert)
-                        {
-                            // 0,00,000キーが押されたらタイマーをスタート
-                            StartZeroKeyTimer();
-                        }
-                        else
-                        {
-                            sendText = GetSendKeyName(stroke.Key.Code.ToString());
-                            //内部処理関数
-                            InternalProcess(sendText);
-                        }
-                    }
-                }
-                else
-                {
-                    InterceptionDriver.Send(context, device, ref stroke, 1);
-                }
-
-                Marshal.FreeHGlobal(idBuffer);
-            }
-
-            InterceptionDriver.DestroyContext(context);
+            
         }
 
-        //30ミリ秒のタイマー
-        private static void StartZeroKeyTimer()
-        {
-            if (zeroKeyPressCount == 0)
-            {
-                zeroKeyPressCount = 1;
-            }
-            else
-            {
-                zeroKeyPressCount++;
-            }
-
-            if (zeroKeyTimer.Enabled)
-            {
-                zeroKeyTimer.Stop();
-            }
-
-            zeroKeyTimer.Start();
-        }
-
-        //タイマーの時間内に0が送信された数を数えてキーを判別
-        private void ZeroKeyTimerElapsed(object sender, ElapsedEventArgs e)
-        {
-            if (zeroKeyPressCount == 1)
-            {
-                sendText = GetSendKeyName(Interceptor.Keys.Numpad0.ToString());
-                InternalProcess(sendText);
-            }
-            else if (zeroKeyPressCount == 2)
-            {
-                sendText = GetSendKeyName("Numpad00");
-                InternalProcess(sendText);
-            }
-            else if (zeroKeyPressCount == 3)
-            {
-                sendText = GetSendKeyName("Numpad000");
-                InternalProcess(sendText);
-            }
-
-            zeroKeyPressCount = 0;
-        }
-
-        //各種テンキーに対応させるやつ
-        private string GetSendKeyName(string keyCode)
-        {
-            //設定のiniから読み込む予定
-            Dictionary<string, bool> type = new Dictionary<string, bool>()
-            {
-                {"isTab", tenkeySettings.isTab}, {"isBsUpper", tenkeySettings.isBSUpper}, {"isZeroUnion", tenkeySettings.isZeroUnion}, {"isZeroThree", tenkeySettings.isZeroThree}
-            };
-
-            if (keyCode.Equals(Interceptor.Keys.Tab.ToString()) && type["isTab"])
-            {
-                return "T_tab";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.NumpadDivide.ToString()) || keyCode.Equals(Interceptor.Keys.ForwardSlashQuestionMark.ToString()))
-            {
-                return "T_slash";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.NumpadAsterisk.ToString()) || keyCode.Equals(Interceptor.Keys.PrintScreen.ToString()))
-            {
-                return "T_asterisk";
-            }
-            else if ((keyCode.Equals(Interceptor.Keys.NumpadMinus.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Interceptor.Keys.Backspace.ToString()) && type["isBsUpper"]))
-            {
-                return "T_minus";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad7.ToString()) || keyCode.Equals(Interceptor.Keys.Home.ToString()))
-            {
-                return "T7";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad8.ToString()) || keyCode.Equals(Interceptor.Keys.Up.ToString()))
-            {
-                return "T8";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad9.ToString()) || keyCode.Equals(Interceptor.Keys.PageUp.ToString()))
-            {
-                return "T9";
-            }
-            else if ((keyCode.Equals(Interceptor.Keys.NumpadPlus.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Interceptor.Keys.NumpadMinus.ToString()) && type["isBsUpper"]))
-            {
-                return "T_plus";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad4.ToString()) || keyCode.Equals(Interceptor.Keys.Left.ToString()))
-            {
-                return "T4";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad5.ToString()))
-            {
-                return "T5";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad6.ToString()) || keyCode.Equals(Interceptor.Keys.Right.ToString()))
-            {
-                return "T6";
-            }
-            else if ((keyCode.Equals(Interceptor.Keys.Backspace.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Interceptor.Keys.NumpadPlus.ToString()) && type["isBsUpper"]))
-            {
-                return "T_bs";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad1.ToString()) || keyCode.Equals(Interceptor.Keys.End.ToString()))
-            {
-                return "T1";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad2.ToString()) || keyCode.Equals(Interceptor.Keys.Down.ToString()))
-            {
-                return "T2";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad3.ToString()) || keyCode.Equals(Interceptor.Keys.PageDown.ToString()))
-            {
-                return "T3";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.NumpadEnter.ToString()) || keyCode.Equals(Interceptor.Keys.Enter.ToString()))
-            {
-                return "T_enter";
-            }
-            else if ((keyCode.Equals(Interceptor.Keys.Numpad0.ToString()) && !type["isZeroUnion"]) || (keyCode.Equals(Interceptor.Keys.Insert.ToString()) && !type["isZeroUnion"]))
-            {
-                return "T0";
-            }
-            else if ((keyCode.Equals("Numpad000") && type["isZeroThree"]) || (keyCode.Equals("Numpad00") && !type["isZeroThree"]) || (keyCode.Equals(Interceptor.Keys.Numpad0.ToString()) && type["isZeroUnion"]) || (keyCode.Equals(Interceptor.Keys.Insert.ToString()) && type["isZeroUnion"]))
-            {
-                return "T000";
-            }
-            else if (keyCode.Equals(Interceptor.Keys.Delete.ToString()))
-            {
-                return "T_dot";
-            }
-            else
-            {
-                return "";
-            }
-        }
+        
 
         protected override CreateParams CreateParams //クリック透過してくれるやつ
         {
@@ -414,6 +205,7 @@ namespace GalaFli
         //内部処理のメイン関数
         public void InternalProcess(string keyCode)
         {
+            Console.WriteLine(keyCode);
 
             //keysの中から、受け取ったkeyの場所を探し、その添え字を格納する変数
             int keyCodeIndex = 0;
@@ -468,7 +260,7 @@ namespace GalaFli
         //送信関数
         public void Send(Key key)
         {
-
+            Console.WriteLine(basisState.name);
 
             switch (basisState.name)
             {
@@ -568,11 +360,6 @@ namespace GalaFli
                 SendInput(inp.Count, ref inpArray[0], Marshal.SizeOf(inp[0]));
             }
 
-            // 1000ミリ秒スリープ
-            System.Threading.Thread.Sleep(1000);
-
-            // 自ウインドウを表示
-            this.Visible = true;
 
             //初期化
             inp.Clear();
@@ -707,6 +494,7 @@ namespace GalaFli
             InternalProcess(keyCode);
 
         }
+
     }
 
 
