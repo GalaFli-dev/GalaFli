@@ -172,7 +172,7 @@ namespace GalaFli
             zeroKeyTimer.AutoReset = false;
 
             //入力を受け付けて処理する無限ループ
-            while(true)
+            while(false)
             {
                 //ここで入力を受け付ける
                 int device = InterceptionDriver.Wait(context);

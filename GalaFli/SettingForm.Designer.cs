@@ -42,8 +42,7 @@
             this.T_Num = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.ConfigureGroupBox = new System.Windows.Forms.GroupBox();
-            this.T_B_ThreeZeros = new System.Windows.Forms.Label();
-            this.T_B_twoZeros = new System.Windows.Forms.Label();
+            this.T_B_UnionZeros = new System.Windows.Forms.Label();
             this.T_A_ThreeZeros = new System.Windows.Forms.Label();
             this.T_B_Plus = new System.Windows.Forms.Label();
             this.T_B_BS = new System.Windows.Forms.Label();
@@ -67,11 +66,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ConfigureGroupBox.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(233, 423);
+            this.buttonSave.Location = new System.Drawing.Point(233, 370);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 0;
@@ -81,7 +81,7 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(314, 423);
+            this.buttonCancel.Location = new System.Drawing.Point(314, 370);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 1;
@@ -165,6 +165,7 @@
             // isThreeZeros
             // 
             this.isThreeZeros.AutoSize = true;
+            this.isThreeZeros.Enabled = false;
             this.isThreeZeros.Location = new System.Drawing.Point(5, 196);
             this.isThreeZeros.Name = "isThreeZeros";
             this.isThreeZeros.Size = new System.Drawing.Size(90, 16);
@@ -177,7 +178,7 @@
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.Menu;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(197, 98);
+            this.textBox3.Location = new System.Drawing.Point(172, 98);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 12);
             this.textBox3.TabIndex = 11;
@@ -219,8 +220,6 @@
             // 
             // ConfigureGroupBox
             // 
-            this.ConfigureGroupBox.Controls.Add(this.T_B_ThreeZeros);
-            this.ConfigureGroupBox.Controls.Add(this.T_B_twoZeros);
             this.ConfigureGroupBox.Controls.Add(this.T_A_ThreeZeros);
             this.ConfigureGroupBox.Controls.Add(this.T_B_Plus);
             this.ConfigureGroupBox.Controls.Add(this.T_B_BS);
@@ -260,41 +259,23 @@
             this.ConfigureGroupBox.TabIndex = 5;
             this.ConfigureGroupBox.TabStop = false;
             // 
-            // T_B_ThreeZeros
+            // T_B_UnionZeros
             // 
-            this.T_B_ThreeZeros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.T_B_UnionZeros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.T_B_ThreeZeros.BackColor = System.Drawing.SystemColors.Control;
-            this.T_B_ThreeZeros.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.T_B_ThreeZeros.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.T_B_ThreeZeros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.T_B_ThreeZeros.Location = new System.Drawing.Point(197, 276);
-            this.T_B_ThreeZeros.Margin = new System.Windows.Forms.Padding(2);
-            this.T_B_ThreeZeros.Name = "T_B_ThreeZeros";
-            this.T_B_ThreeZeros.Size = new System.Drawing.Size(74, 32);
-            this.T_B_ThreeZeros.TabIndex = 61;
-            this.T_B_ThreeZeros.Text = "0 ・ 000";
-            this.T_B_ThreeZeros.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.T_B_ThreeZeros.Visible = false;
-            // 
-            // T_B_twoZeros
-            // 
-            this.T_B_twoZeros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T_B_twoZeros.BackColor = System.Drawing.SystemColors.Control;
-            this.T_B_twoZeros.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.T_B_twoZeros.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.T_B_twoZeros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.T_B_twoZeros.Location = new System.Drawing.Point(197, 276);
-            this.T_B_twoZeros.Margin = new System.Windows.Forms.Padding(2);
-            this.T_B_twoZeros.Name = "T_B_twoZeros";
-            this.T_B_twoZeros.Size = new System.Drawing.Size(74, 32);
-            this.T_B_twoZeros.TabIndex = 60;
-            this.T_B_twoZeros.Text = "0 ・ 00";
-            this.T_B_twoZeros.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.T_B_twoZeros.Visible = false;
+            this.T_B_UnionZeros.BackColor = System.Drawing.SystemColors.Control;
+            this.T_B_UnionZeros.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.T_B_UnionZeros.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
+            this.T_B_UnionZeros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.T_B_UnionZeros.Location = new System.Drawing.Point(26, 159);
+            this.T_B_UnionZeros.Margin = new System.Windows.Forms.Padding(2);
+            this.T_B_UnionZeros.Name = "T_B_UnionZeros";
+            this.T_B_UnionZeros.Size = new System.Drawing.Size(74, 32);
+            this.T_B_UnionZeros.TabIndex = 61;
+            this.T_B_UnionZeros.Text = "0";
+            this.T_B_UnionZeros.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.T_B_UnionZeros.Visible = false;
             // 
             // T_A_ThreeZeros
             // 
@@ -661,6 +642,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.panel1.Controls.Add(this.T_B_UnionZeros);
             this.panel1.Location = new System.Drawing.Point(172, 117);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(199, 215);
@@ -670,7 +652,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 458);
+            this.ClientSize = new System.Drawing.Size(401, 403);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.ConfigureGroupBox);
@@ -679,6 +661,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ConfigureGroupBox.ResumeLayout(false);
             this.ConfigureGroupBox.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -718,8 +701,7 @@
         private System.Windows.Forms.Label T_Tab;
         private System.Windows.Forms.Label T_B_BS;
         private System.Windows.Forms.Label T_B_Plus;
-        private System.Windows.Forms.Label T_B_ThreeZeros;
-        private System.Windows.Forms.Label T_B_twoZeros;
+        private System.Windows.Forms.Label T_B_UnionZeros;
         private System.Windows.Forms.Label T_A_ThreeZeros;
         private System.Windows.Forms.Panel panel1;
     }
