@@ -95,7 +95,7 @@ namespace GalaFli
 
             TenkeySettings tenkeySettings = new TenkeySettings();
 
-            OverlayForm always_overlay = new OverlayForm();
+
 
             try
             {
@@ -109,8 +109,7 @@ namespace GalaFli
                 //JSONをクラスオブジェクト(インスタンス)に変換
                 var jsonDataTemp = JsonSerializer.Deserialize<Data>(json);
 
-                // form1にあるJson_LoadクラスにjsonDataを渡す
-                always_overlay.Json_Load(jsonDataTemp);
+
 
 
                 // 設定ファイルの読み込みが出来るかどうかで分岐
@@ -118,7 +117,7 @@ namespace GalaFli
                 //読み込みが出来た場合はOverlayFormを起動する
                 if (tenkeySettings.deviceId == "none")
                 { //読み込みが出来ないとdeviceIdがnoneになる(コンストラクタ参照)
-                    new SettingForm().ShowDialog();
+                    new SettingForm(new NotifyIcon()).ShowDialog();
                 }
                 else
                 {
@@ -128,6 +127,11 @@ namespace GalaFli
                     Debug.WriteLine(tenkeySettings.isBSUpper);
                     Debug.WriteLine(tenkeySettings.isZeroUnion);
                     Debug.WriteLine(tenkeySettings.isZeroThree);
+
+                    OverlayForm always_overlay = new OverlayForm(tenkeySettings);
+
+                    // form1にあるJson_LoadクラスにjsonDataを渡す
+                    always_overlay.Json_Load(jsonDataTemp);
 
 
                     // OverlayForm を別スレッドで実行
@@ -193,7 +197,7 @@ namespace GalaFli
             // in a tooltip, when the mouse hovers over the systray icon.
             notifyIcon1.Visible = true;
 
-            notifyIcon1.Text = "NotifyIconテスト";
+            notifyIcon1.Text = "Galafli";
 
 
             ContextMenuStrip contextMenuStrip = new ContextMenuStrip();
@@ -248,15 +252,17 @@ namespace GalaFli
         //}
         private void EixtApp_Click(object Sender, EventArgs e)
         {
+            notifyIcon1.Visible = false;
+
             // Close the form, which closes the application.
-            Application.Exit();
+            Environment.Exit(0);
 
         }
 
         private void SettingForm_Click(object Sender, EventArgs e)
         {
             // ハラサワくんにフォーム起動のコード書いてもらう。
-            new SettingForm().ShowDialog();
+            new SettingForm(notifyIcon1).ShowDialog();
 
         }
 
@@ -298,7 +304,6 @@ namespace GalaFli
             //入力を受け付けて処理する無限ループ
             while (true)
             {
-                System.Threading.Thread.Sleep(1000);
                 //ここで入力を受け付ける
                 int device = InterceptionDriver.Wait(context);
 

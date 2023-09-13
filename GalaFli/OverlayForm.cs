@@ -27,7 +27,7 @@ namespace GalaFli
         //デフォルトの画面状態
         Statedata basisState = new Statedata();
 
-        
+
 
         //仮想キーコードを使うための宣言↓↓
         // マウスイベント(mouse_eventの引数と同様のデータ)
@@ -122,11 +122,9 @@ namespace GalaFli
 
         public Label lblMessage;
 
-        
 
-        public OverlayForm()
+        public OverlayForm(TenkeySettings a)
         {
-
 
 
             TransparencyKey = Color.Gray;
@@ -153,10 +151,35 @@ namespace GalaFli
 
             InitializeComponent();
 
-            
+
+            T_tab.Visible = !a.isTab;
+            T_tab_another.Visible = a.isTab;
+
+            T_asterisk.Visible = !a.isTab;
+            T_asterisk_another.Visible = a.isTab;
+
+
+            T_minus.Visible = !a.isBSUpper;
+            T_minus_another.Visible = a.isBSUpper;
+
+            T_bs.Visible = !a.isBSUpper;
+            T_bs_another.Visible = a.isBSUpper;
+
+
+            T00.Visible = !a.isZeroThree;
+            T000.Visible = a.isZeroThree;
+
+            T0.Visible = !a.isZeroUnion;
+            T00.Visible = !a.isZeroUnion;
+            T000.Visible = !a.isZeroUnion;
+            T0_another.Visible = a.isZeroUnion;
+
+
+
+
         }
 
-        
+
 
         protected override CreateParams CreateParams //クリック透過してくれるやつ
         {
@@ -474,6 +497,18 @@ namespace GalaFli
                 T0.Text = TlabelText[16];
                 T000.Text = TlabelText[17];
                 T_dot.Text = TlabelText[18];
+
+                T_tab_another.Text = TlabelText[2];
+                T_asterisk_another.Text = TlabelText[0];
+                T_minus_another.Text = TlabelText[11];
+                T_bs_another.Text = TlabelText[3];
+                T0_another.Text = TlabelText[17];
+                T00.Text = TlabelText[17];
+
+
+
+
+
             }));
         }
 
@@ -495,6 +530,20 @@ namespace GalaFli
 
         }
 
+        private void T_tab_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void T_asterisk_another_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void T_tab_another_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

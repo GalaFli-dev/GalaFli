@@ -42,7 +42,6 @@
             this.T_Num = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.ConfigureGroupBox = new System.Windows.Forms.GroupBox();
-            this.T_B_UnionZeros = new System.Windows.Forms.Label();
             this.T_A_ThreeZeros = new System.Windows.Forms.Label();
             this.T_B_Plus = new System.Windows.Forms.Label();
             this.T_B_BS = new System.Windows.Forms.Label();
@@ -65,6 +64,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.T_B_UnionZeros = new System.Windows.Forms.Label();
             this.ConfigureGroupBox.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -259,24 +259,6 @@
             this.ConfigureGroupBox.TabIndex = 5;
             this.ConfigureGroupBox.TabStop = false;
             // 
-            // T_B_UnionZeros
-            // 
-            this.T_B_UnionZeros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.T_B_UnionZeros.BackColor = System.Drawing.SystemColors.Control;
-            this.T_B_UnionZeros.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.T_B_UnionZeros.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.T_B_UnionZeros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.T_B_UnionZeros.Location = new System.Drawing.Point(26, 159);
-            this.T_B_UnionZeros.Margin = new System.Windows.Forms.Padding(2);
-            this.T_B_UnionZeros.Name = "T_B_UnionZeros";
-            this.T_B_UnionZeros.Size = new System.Drawing.Size(74, 32);
-            this.T_B_UnionZeros.TabIndex = 61;
-            this.T_B_UnionZeros.Text = "0";
-            this.T_B_UnionZeros.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.T_B_UnionZeros.Visible = false;
-            // 
             // T_A_ThreeZeros
             // 
             this.T_A_ThreeZeros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -294,6 +276,7 @@
             this.T_A_ThreeZeros.Text = "000";
             this.T_A_ThreeZeros.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.T_A_ThreeZeros.Visible = false;
+            this.T_A_ThreeZeros.Click += new System.EventHandler(this.T_A_ThreeZeros_Click);
             // 
             // T_B_Plus
             // 
@@ -647,6 +630,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(199, 215);
             this.panel1.TabIndex = 62;
+            // 
+            // T_B_UnionZeros
+            // 
+            this.T_B_UnionZeros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.T_B_UnionZeros.BackColor = System.Drawing.SystemColors.Control;
+            this.T_B_UnionZeros.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.T_B_UnionZeros.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
+            this.T_B_UnionZeros.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.T_B_UnionZeros.Location = new System.Drawing.Point(26, 159);
+            this.T_B_UnionZeros.Margin = new System.Windows.Forms.Padding(2);
+            this.T_B_UnionZeros.Name = "T_B_UnionZeros";
+            this.T_B_UnionZeros.Size = new System.Drawing.Size(74, 32);
+            this.T_B_UnionZeros.TabIndex = 61;
+            this.T_B_UnionZeros.Text = "0";
+            this.T_B_UnionZeros.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.T_B_UnionZeros.Visible = false;
             // 
             // SettingForm
             // 

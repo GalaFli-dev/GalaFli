@@ -26,8 +26,12 @@ namespace GalaFli
         bool initializeFlag = true;
 
 
-        public SettingForm()
+
+        NotifyIcon notifyIcon;
+
+        public SettingForm(NotifyIcon a)
         {
+            notifyIcon = a;
             InitializeComponent();
         }
 
@@ -54,7 +58,7 @@ namespace GalaFli
                     comboBox1.Items.Add(new KeyValuePair(cnt + ". " + deviceName + "(" + HID.Substring(0, HID_FORMAT_LENGTH) + "...)", HID));
                     cnt++;
                 }
-                
+
             }
 
             if (inF)
@@ -98,9 +102,9 @@ namespace GalaFli
             ret[3] = WritePrivateProfileString("Tenkey", "isZeroUnion", isIntegration.Checked.ToString(), ".\\TenkeySettings.ini");
             ret[4] = WritePrivateProfileString("Tenkey", "isZeroThree", isThreeZeros.Checked.ToString(), ".\\TenkeySettings.ini");
 
-
-
+            notifyIcon.Visible = false;
             Application.Restart();
+            Environment.Exit(0);
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -110,7 +114,9 @@ namespace GalaFli
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
+            notifyIcon.Visible = false;
             Application.Restart();
+            Environment.Exit(0);
         }
 
         private void checkBack_CheckedChanged(object sender, EventArgs e)
@@ -171,6 +177,11 @@ namespace GalaFli
 
                 T_A_ThreeZeros.Visible = false;
             }
+        }
+
+        private void T_A_ThreeZeros_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
