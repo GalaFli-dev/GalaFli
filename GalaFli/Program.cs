@@ -298,7 +298,6 @@ namespace GalaFli
             //入力を受け付けて処理する無限ループ
             while (true)
             {
-                System.Threading.Thread.Sleep(1000);
                 //ここで入力を受け付ける
                 int device = InterceptionDriver.Wait(context);
 

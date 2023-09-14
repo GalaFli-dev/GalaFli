@@ -27,7 +27,7 @@ namespace GalaFli
         //デフォルトの画面状態
         Statedata basisState = new Statedata();
 
-        
+
 
         //仮想キーコードを使うための宣言↓↓
         // マウスイベント(mouse_eventの引数と同様のデータ)
@@ -122,7 +122,7 @@ namespace GalaFli
 
         public Label lblMessage;
 
-        
+
 
         public OverlayForm()
         {
@@ -153,10 +153,10 @@ namespace GalaFli
 
             InitializeComponent();
 
-            
+
         }
 
-        
+
 
         protected override CreateParams CreateParams //クリック透過してくれるやつ
         {
@@ -358,9 +358,8 @@ namespace GalaFli
             {
                 INPUT[] inpArray = inp.ToArray();
                 SendInput(inp.Count, ref inpArray[0], Marshal.SizeOf(inp[0]));
+
             }
-
-
             //初期化
             inp.Clear();
             cmdList.Clear();
