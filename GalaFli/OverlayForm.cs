@@ -124,6 +124,9 @@ namespace GalaFli
             // 画面の幅と高さを取得
             int screenWidth = Screen.PrimaryScreen.WorkingArea.Width;
             int screenHeight = Screen.PrimaryScreen.WorkingArea.Height;
+            
+            Width = 330;
+            Height = 240;
 
 
 
@@ -138,7 +141,7 @@ namespace GalaFli
             Console.WriteLine(this.Width);
             Console.WriteLine(this.Height);
 
-            
+
 
             InitializeComponent();
 
@@ -226,6 +229,7 @@ namespace GalaFli
             {
                 //送信の場合
                 case "send":
+                    View_ShortcutKey(cmdList, "send");
                     Send(currentState.keys[keyCodeIndex]);
                     break;
 
@@ -484,31 +488,39 @@ namespace GalaFli
 
         public void View_ShortcutKey(List<string> cmdList, String action)
         {
-            string viewText = "";
-            if (action == "cmd") {
-                foreach (string cmd in cmdList)
-                {
-                    if (cmd.Contains("ctrl"))
-                    {
-                        viewText += "ctrl\n";
-                    }
-                    if (cmd.Contains("alt"))
-                    {
-                        viewText += "alt\n";
-                    }
-                    if (cmd.Contains("shift"))
-                    {
-                        viewText += "shift\n";
-                    }
-                    if (cmd.Contains("win"))
-                    {
-                        viewText += "win\n";
-                    }
-                }
-            }
             Invoke(new Action(() =>
             {
-                viewer_Shortcutkey.Text = viewText.TrimEnd();
+                if (action == "cmd")
+                {
+                    foreach (string cmd in cmdList)
+                    {
+                        if (cmd.Contains("ctrl"))
+                        {
+                            viewer_Ctrl.Visible = true;
+                        }
+                        if (cmd.Contains("alt"))
+                        {
+                            viewer_Alt.Visible = true;
+                        }
+                        if (cmd.Contains("shift"))
+                        {
+                            viewer_Shift.Visible = true;
+                        }
+                        if (cmd.Contains("win"))
+                        {
+                            viewer_Win.Visible = true;
+                        }
+                    }
+                }
+                else
+                {
+                    viewer_Ctrl.Visible = false;
+                    viewer_Alt.Visible = false;
+                    viewer_Shift.Visible = false;
+                    viewer_Win.Visible = false;
+                }
+
+
             }));
 
         }
@@ -542,7 +554,25 @@ namespace GalaFli
 
         }
 
-        
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OverlayForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fnHint_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
