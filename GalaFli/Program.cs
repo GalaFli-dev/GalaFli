@@ -1,17 +1,14 @@
-﻿using Interceptor;
+﻿using InputInterceptorNS;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.Json;
 using System.Threading;
 using System.Timers;
-using System.Windows;
 using System.Windows.Forms;
 
 
@@ -261,7 +258,7 @@ namespace GalaFli
 
         private void SettingForm_Click(object Sender, EventArgs e)
         {
-            // ハラサワくんにフォーム起動のコード書いてもらう。
+            // @Himonooにフォーム起動のコード書いてもらう。
             new SettingForm(notifyIcon1).ShowDialog();
 
         }
@@ -289,80 +286,91 @@ namespace GalaFli
         public input_Realtime(OverlayForm a)
         {
             overlayForm = a;
-            //デバイスIDを格納するポインタのサイズ
-            const int ID_BUFFER_SIZE = 500;
-            //Interceptionのドライバと接続して使用できるようにする
-            IntPtr context = InterceptionDriver.CreateContext();
 
-            //すべてのキーボード入力を受け付ける(マウスは除外)
-            InterceptionDriver.SetFilter(context, InterceptionDriver.IsKeyboard, (int)KeyboardFilterMode.All);
-
-            //0の数を判定する際に使用するタイマーの設定
-            zeroKeyTimer.Elapsed += ZeroKeyTimerElapsed;
-            zeroKeyTimer.AutoReset = false;
-
-            //入力を受け付けて処理する無限ループ
-            while (true)
+            //ドライバと接続を試行し、結果によって処理を分岐
+            if (!InitializeDriver())
             {
-                //ここで入力を受け付ける
-                int device = InterceptionDriver.Wait(context);
+                //接続できない場合はドライバをインストール
+                InstallDriver();
 
-                //入力されたキーコードやキーのステータスを取得
-                Stroke stroke = new Stroke();
-                InterceptionDriver.Receive(context, device, ref stroke, 1);
+                //プログラムを終了
+                Environment.Exit(0);
+            }
+            else
+            {
+                //デバイスIDを格納するポインタのサイズ
+                const int ID_BUFFER_SIZE = 500;
+                //Interceptionのドライバと接続して使用できるようにする
+                IntPtr context = InputInterceptor.CreateContext();
+                //すべてのキーボード入力を受け付ける(マウスは除外)
+                InputInterceptor.SetFilter(context, InputInterceptor.IsKeyboard, (int)KeyboardFilter.All);
 
-                //入力されたデバイスのIDを取得
-                IntPtr idBuffer = Marshal.AllocHGlobal(ID_BUFFER_SIZE);
-                int result = InterceptionDriver.GetHardwareId(context, device, idBuffer, ID_BUFFER_SIZE);
-                string id = "";
+                //0の数を判定する際に使用するタイマーの設定
+                zeroKeyTimer.Elapsed += ZeroKeyTimerElapsed;
+                zeroKeyTimer.AutoReset = false;
 
-                if (result > 0)
+                //入力を受け付けて処理する無限ループ
+                while (true)
                 {
-                    char currentChar;
-                    int offset = 0;
+                    //ここで入力を受け付ける
+                    int device = InputInterceptor.Wait(context);
 
-                    do
+                    //入力されたキーコードやキーのステータスを取得
+                    Stroke stroke = new Stroke();
+                    InputInterceptor.Receive(context, device, ref stroke, 1);
+
+                    //入力されたデバイスのIDを取得
+                    IntPtr idBuffer = Marshal.AllocHGlobal(ID_BUFFER_SIZE);
+                    uint result = InputInterceptor.GetHardwareId(context, device, idBuffer, ID_BUFFER_SIZE);
+                    string id = "";
+
+                    if (result > 0)
                     {
-                        currentChar = (char)Marshal.ReadByte(idBuffer, offset);
+                        char currentChar;
+                        int offset = 0;
 
-                        if (currentChar != '\0')
+                        do
                         {
-                            id += currentChar;
-                            offset += sizeof(char);
-                        }
+                            currentChar = (char)Marshal.ReadByte(idBuffer, offset);
 
-                    } while (currentChar != '\0');
+                            if (currentChar != '\0')
+                            {
+                                id += currentChar;
+                                offset += sizeof(char);
+                            }
 
-                }
-                Console.WriteLine(id + "\t" + stroke.Key.Code.ToString() + "\t" + stroke.Key.State.ToString());
-                //指定されたテンキーの入力かつNumLock以外の入力を処理し、処理されないものはOSに再送信
-                if (id.Equals(tenkeySettings.deviceId) && stroke.Key.Code != Interceptor.Keys.NumLock)
-                {
-                    if (stroke.Key.State.ToString().Contains("Up"))
+                        } while (currentChar != '\0');
+
+                    }
+
+                    //指定されたテンキーの入力かつNumLock以外の入力を処理し、処理されないものはOSに再送信
+                    if (id.Equals(tenkeySettings.deviceId) && stroke.Key.Code != KeyCode.NumLock)
                     {
-                        if (stroke.Key.Code == Interceptor.Keys.Numpad0 || stroke.Key.Code == Interceptor.Keys.Insert)
+                        if (stroke.Key.State.ToString().Contains("Up"))
                         {
-                            // 0,00,000キーが押されたらタイマーをスタート
-                            StartZeroKeyTimer();
-                        }
-                        else
-                        {
-                            sendText = GetSendKeyName(stroke.Key.Code.ToString());
-                            //内部処理関数
-                            overlayForm.InternalProcess(sendText);
+                            if (stroke.Key.Code == KeyCode.Numpad0 || stroke.Key.Code == KeyCode.Insert)
+                            {
+                                // 0,00,000キーが押されたらタイマーをスタート
+                                StartZeroKeyTimer();
+                            }
+                            else
+                            {
+                                sendText = GetSendKeyName(stroke.Key.Code.ToString());
+                                //内部処理関数
+                                overlayForm.InternalProcess(sendText);
+                            }
                         }
                     }
-                }
-                else
-                {
-                    InterceptionDriver.Send(context, device, ref stroke, 1);
-                }
+                    else
+                    {
+                        InputInterceptor.Send(context, device, ref stroke, 1);
+                    }
 
-                Marshal.FreeHGlobal(idBuffer);
+                    Marshal.FreeHGlobal(idBuffer);
+                }
             }
-
-            InterceptionDriver.DestroyContext(context);
         }
+
         //30ミリ秒のタイマー
         private static void StartZeroKeyTimer()
         {
@@ -388,7 +396,7 @@ namespace GalaFli
         {
             if (zeroKeyPressCount == 1)
             {
-                sendText = GetSendKeyName(Interceptor.Keys.Numpad0.ToString());
+                sendText = GetSendKeyName(KeyCode.Numpad0.ToString());
                 overlayForm.InternalProcess(sendText);
             }
             else if (zeroKeyPressCount == 2)
@@ -414,85 +422,119 @@ namespace GalaFli
                 {"isTab", tenkeySettings.isTab}, {"isBsUpper", tenkeySettings.isBSUpper}, {"isZeroUnion", tenkeySettings.isZeroUnion}, {"isZeroThree", tenkeySettings.isZeroThree}
             };
 
-            if (keyCode.Equals(Interceptor.Keys.Tab.ToString()) && type["isTab"])
+            if (keyCode.Equals(KeyCode.Tab.ToString()) && type["isTab"])
             {
                 return "T_tab";
             }
-            else if (keyCode.Equals(Interceptor.Keys.NumpadDivide.ToString()) || keyCode.Equals(Interceptor.Keys.ForwardSlashQuestionMark.ToString()))
+            else if (keyCode.Equals(KeyCode.NumpadDivide.ToString()) || keyCode.Equals(KeyCode.Slash.ToString()))
             {
                 return "T_slash";
             }
-            else if (keyCode.Equals(Interceptor.Keys.NumpadAsterisk.ToString()) || keyCode.Equals(Interceptor.Keys.PrintScreen.ToString()))
+            else if (keyCode.Equals(KeyCode.NumpadAsterisk.ToString()) || keyCode.Equals(KeyCode.PrintScreen.ToString()))
             {
                 return "T_asterisk";
             }
-            else if ((keyCode.Equals(Interceptor.Keys.NumpadMinus.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Interceptor.Keys.Backspace.ToString()) && type["isBsUpper"]))
+            else if ((keyCode.Equals(KeyCode.NumpadMinus.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(KeyCode.Backspace.ToString()) && type["isBsUpper"]))
             {
                 return "T_minus";
             }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad7.ToString()) || keyCode.Equals(Interceptor.Keys.Home.ToString()))
+            else if (keyCode.Equals(KeyCode.Numpad7.ToString()) || keyCode.Equals(KeyCode.Home.ToString()))
             {
                 return "T7";
             }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad8.ToString()) || keyCode.Equals(Interceptor.Keys.Up.ToString()))
+            else if (keyCode.Equals(KeyCode.Numpad8.ToString()) || keyCode.Equals(KeyCode.Up.ToString()))
             {
                 return "T8";
             }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad9.ToString()) || keyCode.Equals(Interceptor.Keys.PageUp.ToString()))
+            else if (keyCode.Equals(KeyCode.Numpad9.ToString()) || keyCode.Equals(KeyCode.PageUp.ToString()))
             {
                 return "T9";
             }
-            else if ((keyCode.Equals(Interceptor.Keys.NumpadPlus.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Interceptor.Keys.NumpadMinus.ToString()) && type["isBsUpper"]))
+            else if ((keyCode.Equals(KeyCode.NumpadPlus.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(KeyCode.NumpadMinus.ToString()) && type["isBsUpper"]))
             {
                 return "T_plus";
             }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad4.ToString()) || keyCode.Equals(Interceptor.Keys.Left.ToString()))
+            else if (keyCode.Equals(KeyCode.Numpad4.ToString()) || keyCode.Equals(KeyCode.Left.ToString()))
             {
                 return "T4";
             }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad5.ToString()))
+            else if (keyCode.Equals(KeyCode.Numpad5.ToString()))
             {
                 return "T5";
             }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad6.ToString()) || keyCode.Equals(Interceptor.Keys.Right.ToString()))
+            else if (keyCode.Equals(KeyCode.Numpad6.ToString()) || keyCode.Equals(KeyCode.Right.ToString()))
             {
                 return "T6";
             }
-            else if ((keyCode.Equals(Interceptor.Keys.Backspace.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(Interceptor.Keys.NumpadPlus.ToString()) && type["isBsUpper"]))
+            else if ((keyCode.Equals(KeyCode.Backspace.ToString()) && !type["isBsUpper"]) || (keyCode.Equals(KeyCode.NumpadPlus.ToString()) && type["isBsUpper"]))
             {
                 return "T_bs";
             }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad1.ToString()) || keyCode.Equals(Interceptor.Keys.End.ToString()))
+            else if (keyCode.Equals(KeyCode.Numpad1.ToString()) || keyCode.Equals(KeyCode.End.ToString()))
             {
                 return "T1";
             }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad2.ToString()) || keyCode.Equals(Interceptor.Keys.Down.ToString()))
+            else if (keyCode.Equals(KeyCode.Numpad2.ToString()) || keyCode.Equals(KeyCode.Down.ToString()))
             {
                 return "T2";
             }
-            else if (keyCode.Equals(Interceptor.Keys.Numpad3.ToString()) || keyCode.Equals(Interceptor.Keys.PageDown.ToString()))
+            else if (keyCode.Equals(KeyCode.Numpad3.ToString()) || keyCode.Equals(KeyCode.PageDown.ToString()))
             {
                 return "T3";
             }
-            else if (keyCode.Equals(Interceptor.Keys.NumpadEnter.ToString()) || keyCode.Equals(Interceptor.Keys.Enter.ToString()))
+            else if (keyCode.Equals(KeyCode.NumpadEnter.ToString()) || keyCode.Equals(KeyCode.Enter.ToString()))
             {
                 return "T_enter";
             }
-            else if ((keyCode.Equals(Interceptor.Keys.Numpad0.ToString()) && !type["isZeroUnion"]) || (keyCode.Equals(Interceptor.Keys.Insert.ToString()) && !type["isZeroUnion"]))
+            else if ((keyCode.Equals(KeyCode.Numpad0.ToString()) && !type["isZeroUnion"]) || (keyCode.Equals(KeyCode.Insert.ToString()) && !type["isZeroUnion"]))
             {
                 return "T0";
             }
-            else if ((keyCode.Equals("Numpad000") && type["isZeroThree"]) || (keyCode.Equals("Numpad00") && !type["isZeroThree"]) || (keyCode.Equals(Interceptor.Keys.Numpad0.ToString()) && type["isZeroUnion"]) || (keyCode.Equals(Interceptor.Keys.Insert.ToString()) && type["isZeroUnion"]))
+            else if ((keyCode.Equals("Numpad000") && type["isZeroThree"]) || (keyCode.Equals("Numpad00") && !type["isZeroThree"]) || (keyCode.Equals(KeyCode.Numpad0.ToString()) && type["isZeroUnion"]) || (keyCode.Equals(KeyCode.Insert.ToString()) && type["isZeroUnion"]))
             {
                 return "T000";
             }
-            else if (keyCode.Equals(Interceptor.Keys.Delete.ToString()))
+            else if (keyCode.Equals(KeyCode.Delete.ToString()))
             {
                 return "T_dot";
             }
             else
             {
                 return "";
+            }
+        }
+
+        //ドライバへの接続をし、結果を返す
+        static Boolean InitializeDriver()
+        {
+            if (InputInterceptor.CheckDriverInstalled())
+            {
+                if (InputInterceptor.Initialize())
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        //ドライバをインストールするやつ。管理者権限が必要
+        static void InstallDriver()
+        {
+            MessageBox.Show("動作に必要なドライバがインストールされていないためインストールします。");
+            if (InputInterceptor.CheckAdministratorRights())
+            {
+                if (InputInterceptor.InstallDriver())
+                {
+                    MessageBox.Show("ドライバのインストールが完了しました。コンピュータを再起動してください。");
+                }
+                else
+                {
+                    MessageBox.Show("ドライバのインストールに失敗しました。再試行するかソフトウェアを再インストールしてください。");
+                }
+            }
+            else
+            {
+                MessageBox.Show("ドライバのインストールに失敗しました。管理者権限で再度起動してください。");
             }
         }
     }
