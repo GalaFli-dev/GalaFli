@@ -411,9 +411,9 @@
             // 
             this.viewer_Shortcutkey.Enabled = false;
             this.viewer_Shortcutkey.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
-            this.viewer_Shortcutkey.Location = new System.Drawing.Point(207, 221);
+            this.viewer_Shortcutkey.Location = new System.Drawing.Point(213, 204);
             this.viewer_Shortcutkey.Name = "viewer_Shortcutkey";
-            this.viewer_Shortcutkey.Size = new System.Drawing.Size(81, 52);
+            this.viewer_Shortcutkey.Size = new System.Drawing.Size(65, 82);
             this.viewer_Shortcutkey.TabIndex = 25;
             this.viewer_Shortcutkey.Text = "button1";
             this.viewer_Shortcutkey.UseVisualStyleBackColor = true;

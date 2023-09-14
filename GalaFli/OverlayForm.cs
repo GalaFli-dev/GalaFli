@@ -237,12 +237,12 @@ namespace GalaFli
                 //コマンドの場合
                 case "cmd":
                     cmdList.Add(currentState.keys[keyCodeIndex].value[0][0]);
-                    View_ShortcutKey(cmdList);
+                    View_ShortcutKey(cmdList, "cmd");
                     break;
 
                 //cmd配列初期化の場合
                 case "delete":
-                    View_ShortcutKey(cmdList);
+                    View_ShortcutKey(cmdList, "delete");
                     cmdList.Clear();
 
                     break;
@@ -482,16 +482,35 @@ namespace GalaFli
             }));
         }
 
-        public void View_ShortcutKey(List<string> cmdList)
+        public void View_ShortcutKey(List<string> cmdList, String action)
         {
-            foreach (string cmd in cmdList)
-            {
-                if(cmd.)
-                Invoke(new Action(() =>
+            string viewText = "";
+            if (action == "cmd") {
+                foreach (string cmd in cmdList)
                 {
-                    viewer_Shortcutkey.Text = cmd;
-                }));
+                    if (cmd.Contains("ctrl"))
+                    {
+                        viewText += "ctrl\n";
+                    }
+                    if (cmd.Contains("alt"))
+                    {
+                        viewText += "alt\n";
+                    }
+                    if (cmd.Contains("shift"))
+                    {
+                        viewText += "shift\n";
+                    }
+                    if (cmd.Contains("win"))
+                    {
+                        viewText += "win\n";
+                    }
+                }
             }
+            Invoke(new Action(() =>
+            {
+                viewer_Shortcutkey.Text = viewText.TrimEnd();
+            }));
+
         }
 
 
