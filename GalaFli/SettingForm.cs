@@ -16,7 +16,8 @@ namespace GalaFli
         static extern bool WritePrivateProfileString(string lpAppName, string lpKeyName, string lpString, string lpFileName);
         bool initializeFlag = true;
 
-
+        //設定ファイルがあるとき読み込んで現状の設定を反映させる
+        TenkeySettings tenkeySettings = new TenkeySettings();
 
         NotifyIcon notifyIcon;
 
@@ -63,6 +64,25 @@ namespace GalaFli
         {
             GetKeyboardSet(initializeFlag);
             initializeFlag = false;
+            if (tenkeySettings.deviceId != "none")
+            {
+                foreach (KeyValuePair item in comboBox1.Items)
+                {
+                    if (item.Value == tenkeySettings.deviceId)
+                    {
+                        comboBox1.SelectedItem = item;
+                        break;
+                    }
+                }
+                isTabNumlock.Checked = tenkeySettings.isTab;
+                isBackSpace.Checked = tenkeySettings.isBSUpper;
+                isIntegration.Checked = tenkeySettings.isZeroUnion;
+                isThreeZeros.Checked = tenkeySettings.isZeroThree;
+            }
+            if (!isIntegration.Checked)
+            {
+                isThreeZeros.Enabled = true;
+            }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
