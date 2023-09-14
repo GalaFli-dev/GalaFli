@@ -213,6 +213,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A7AA126E4A69488E8B9B7D05AE7ACD81"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_C09EBFDF6B3846C7B4EBBFF01B2FBE8C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -959,6 +965,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A7AA126E4A69488E8B9B7D05AE7ACD81"
+            {
+            "SourcePath" = "8:..\\GalaFli\\banner.jpg"
+            "TargetName" = "8:banner.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_81A9CE49C23D43B8909E227804E4B7B8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C09EBFDF6B3846C7B4EBBFF01B2FBE8C"
             {
             "SourcePath" = "8:..\\GalaFli\\uninstall.vbs"
@@ -1180,6 +1206,17 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_0497C25B034D417DAFA1D8DE754A17FA"
+                    {
+                    "Name" = "8:GalaFli"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_2E6E0B0873F34F909524210125A78549"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_81A9CE49C23D43B8909E227804E4B7B8"
@@ -1222,7 +1259,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GalaFli"
         "ProductCode" = "8:{2F29F016-8B49-4AA1-9738-AB7C645DC3ED}"
-        "PackageCode" = "8:{FB1305CB-20E6-4E11-89F1-C18AB092A573}"
+        "PackageCode" = "8:{BC30B010-7FFF-4603-9E82-08ABE1F3BA3D}"
         "UpgradeCode" = "8:{ACF75FF9-EEFA-487D-81B9-A013D4A20082}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -1342,6 +1379,20 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_FC296AE5D43D497B826D43519E7FEB31"
+            {
+            "Name" = "8:GalaFli"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_20F422727C2A47849D750E1BC20D0A5E"
+            "Folder" = "8:_0497C25B034D417DAFA1D8DE754A17FA"
+            "WorkingFolder" = "8:_81A9CE49C23D43B8909E227804E4B7B8"
+            "Icon" = "8:_27278C249C61434A80C769ED485089C8"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
@@ -1369,7 +1420,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_A7AA126E4A69488E8B9B7D05AE7ACD81"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "UpdateText"
@@ -1413,7 +1465,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_A7AA126E4A69488E8B9B7D05AE7ACD81"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -1461,7 +1514,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_A7AA126E4A69488E8B9B7D05AE7ACD81"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "InstallAllUsersVisible"
@@ -1496,7 +1550,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_A7AA126E4A69488E8B9B7D05AE7ACD81"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "BannerText"
@@ -1752,7 +1807,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_A7AA126E4A69488E8B9B7D05AE7ACD81"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -1934,7 +1990,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_A7AA126E4A69488E8B9B7D05AE7ACD81"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "ShowProgress"
