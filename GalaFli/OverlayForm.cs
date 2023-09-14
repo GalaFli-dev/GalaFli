@@ -138,7 +138,7 @@ namespace GalaFli
             Console.WriteLine(this.Width);
             Console.WriteLine(this.Height);
 
-            TopMost = true;
+            
 
             InitializeComponent();
 
@@ -147,12 +147,15 @@ namespace GalaFli
             T0.Visible = !a.isZeroUnion;
             T000.Visible = !a.isZeroUnion;
             T0_another.Visible = a.isZeroUnion;
-
-
-
+            TopMost = true;
 
         }
 
+
+        private void OverlayForm_Shown(object sender, EventArgs e)
+        {
+            TopMost = true;
+        }
 
 
         protected override CreateParams CreateParams //クリック透過してくれるやつ
@@ -234,11 +237,14 @@ namespace GalaFli
                 //コマンドの場合
                 case "cmd":
                     cmdList.Add(currentState.keys[keyCodeIndex].value[0][0]);
+                    View_ShortcutKey(cmdList);
                     break;
 
                 //cmd配列初期化の場合
                 case "delete":
+                    View_ShortcutKey(cmdList);
                     cmdList.Clear();
+
                     break;
 
                 //値がNULL（何もしない）場合
@@ -473,17 +479,21 @@ namespace GalaFli
 
                 T0_another.Text = TlabelText[17];
 
-
-
-
-
             }));
         }
 
-        private void OverlayForm_Load(object sender, EventArgs e)
+        public void View_ShortcutKey(List<string> cmdList)
         {
-
+            foreach (string cmd in cmdList)
+            {
+                if(cmd.)
+                Invoke(new Action(() =>
+                {
+                    viewer_Shortcutkey.Text = cmd;
+                }));
+            }
         }
+
 
         public void debug_post()
         {
@@ -512,6 +522,8 @@ namespace GalaFli
         {
 
         }
+
+        
     }
 
 

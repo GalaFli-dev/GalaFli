@@ -51,6 +51,7 @@
             this.T_dot = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.T0_another = new System.Windows.Forms.Label();
+            this.viewer_Shortcutkey = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // T_tab
@@ -406,12 +407,24 @@
             this.T0_another.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.T0_another.Visible = false;
             // 
+            // viewer_Shortcutkey
+            // 
+            this.viewer_Shortcutkey.Enabled = false;
+            this.viewer_Shortcutkey.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
+            this.viewer_Shortcutkey.Location = new System.Drawing.Point(207, 221);
+            this.viewer_Shortcutkey.Name = "viewer_Shortcutkey";
+            this.viewer_Shortcutkey.Size = new System.Drawing.Size(81, 52);
+            this.viewer_Shortcutkey.TabIndex = 25;
+            this.viewer_Shortcutkey.Text = "button1";
+            this.viewer_Shortcutkey.UseVisualStyleBackColor = true;
+            // 
             // OverlayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(300, 300);
+            this.Controls.Add(this.viewer_Shortcutkey);
             this.Controls.Add(this.T0_another);
             this.Controls.Add(this.T_dot);
             this.Controls.Add(this.T000);
@@ -441,7 +454,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "OverlayForm";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.OverlayForm_Load);
+            this.Shown += new System.EventHandler(this.OverlayForm_Shown);
             this.ResumeLayout(false);
 
         }
@@ -469,6 +482,7 @@
         private System.Windows.Forms.Label T_dot;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label T0_another;
+        private System.Windows.Forms.Button viewer_Shortcutkey;
     }
 }
 
