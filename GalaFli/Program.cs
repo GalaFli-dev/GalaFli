@@ -520,21 +520,30 @@ namespace GalaFli
         //ドライバをインストールするやつ。管理者権限が必要
         static void InstallDriver()
         {
-            MessageBox.Show("動作に必要なドライバがインストールされていないためインストールします。");
+            MessageBox.Show("動作に必要なドライバがインストールされていないためインストールします。", "GalaFli", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             if (InputInterceptor.CheckAdministratorRights())
             {
                 if (InputInterceptor.InstallDriver())
                 {
-                    MessageBox.Show("ドライバのインストールが完了しました。コンピュータを再起動してください。");
+                    DialogResult result = MessageBox.Show("ドライバのインストールが完了しました。\nGalaFliを使用するにはコンピュータを再起動する必要があります。\n今すぐ再起動しますか？", "GalaFli", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+                    if(result == DialogResult.Yes)
+                    {
+                        ProcessStartInfo processStartInfo = new ProcessStartInfo();
+                        processStartInfo.FileName = "shutdown.exe";
+                        processStartInfo.Arguments = "/r /f /t 0";
+                        processStartInfo.UseShellExecute = false;
+                        processStartInfo.CreateNoWindow = true;
+                        Process process = Process.Start(processStartInfo);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("ドライバのインストールに失敗しました。再試行するかソフトウェアを再インストールしてください。");
+                    MessageBox.Show("ドライバのインストールに失敗しました。\n再試行、再起動、再インストールをお試しください。", "GalaFli", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("ドライバのインストールに失敗しました。管理者権限で再度起動してください。");
+                MessageBox.Show("ドライバのインストールに失敗しました。管理者権限で再度起動してください。", "GalaFli", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
