@@ -213,6 +213,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_C09EBFDF6B3846C7B4EBBFF01B2FBE8C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_D8CED565B3207137C04A99FA1DAD3AD1"
         "OwnerKey" = "8:_20F422727C2A47849D750E1BC20D0A5E"
         "MsmSig" = "8:_UNDEFINED"
@@ -438,6 +444,34 @@
             "Identifier" = "8:_810C75E0_0A07_490B_AB50_E50881AD5896"
             "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:[TARGETDIR]GalaFli.exe:::GalaFli:::[CHECKBOXA1]:::[ALLUSERS]"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_E8D8CF32D3694CEE853149D00D920B39"
+            {
+            "Name" = "8:uninstall.vbs"
+            "Condition" = "8:"
+            "Object" = "8:_C09EBFDF6B3846C7B4EBBFF01B2FBE8C"
+            "FileType" = "3:4"
+            "InstallAction" = "3:4"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_EC699F3C_812D_4972_BF3C_11B798158003"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:GalaFli:::[ALLUSERS]"
+            }
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_EAD36D2BAD0C4E81998664D9DFB6694B"
+            {
+            "Name" = "8:uninstall.vbs"
+            "Condition" = "8:"
+            "Object" = "8:_C09EBFDF6B3846C7B4EBBFF01B2FBE8C"
+            "FileType" = "3:4"
+            "InstallAction" = "3:3"
+            "Arguments" = "8:"
+            "EntryPoint" = "8:"
+            "Sequence" = "3:1"
+            "Identifier" = "8:_B42AF566_C281_4C9D_9EBC_C6463D2BE1A6"
+            "InstallerClass" = "11:FALSE"
+            "CustomActionData" = "8:GalaFli:::[ALLUSERS]"
             }
         }
         "DefaultFeature"
@@ -923,6 +957,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C09EBFDF6B3846C7B4EBBFF01B2FBE8C"
+            {
+            "SourcePath" = "8:..\\GalaFli\\uninstall.vbs"
+            "TargetName" = "8:uninstall.vbs"
+            "Tag" = "8:"
+            "Folder" = "8:_81A9CE49C23D43B8909E227804E4B7B8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D8CED565B3207137C04A99FA1DAD3AD1"
