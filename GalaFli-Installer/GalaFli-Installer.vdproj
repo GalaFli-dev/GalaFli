@@ -425,7 +425,7 @@
             "Sequence" = "3:1"
             "Identifier" = "8:_810C75E0_0A07_490B_AB50_E50881AD5896"
             "InstallerClass" = "11:FALSE"
-            "CustomActionData" = "8:"
+            "CustomActionData" = "8:[TARGETDIR]GalaFli.exe:::GalaFli:::[CHECKBOXA1]:::[ALLUSERS]"
             }
         }
         "DefaultFeature"
@@ -1116,7 +1116,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GalaFli-Installer"
         "ProductCode" = "8:{2F29F016-8B49-4AA1-9738-AB7C645DC3ED}"
-        "PackageCode" = "8:{0CA94ACD-60D9-4C56-B061-73FCDD26F5E1}"
+        "PackageCode" = "8:{FB1305CB-20E6-4E11-89F1-C18AB092A573}"
         "UpgradeCode" = "8:{ACF75FF9-EEFA-487D-81B9-A013D4A20082}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
