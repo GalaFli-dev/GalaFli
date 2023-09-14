@@ -49,6 +49,12 @@
             this.T000 = new System.Windows.Forms.Label();
             this.T_dot = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.T_tab_another = new System.Windows.Forms.Label();
+            this.T_asterisk_another = new System.Windows.Forms.Label();
+            this.T_minus_another = new System.Windows.Forms.Label();
+            this.T_bs_another = new System.Windows.Forms.Label();
+            this.T0_another = new System.Windows.Forms.Label();
+            this.T00 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // T_tab
@@ -65,9 +71,9 @@
             this.T_tab.Name = "T_tab";
             this.T_tab.Size = new System.Drawing.Size(40, 40);
             this.T_tab.TabIndex = 1;
-            this.T_tab.Text = "NL";
             this.T_tab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.T_tab, "Tabキー");
+            this.T_tab.Click += new System.EventHandler(this.T_tab_Click);
             // 
             // T_slash
             // 
@@ -344,7 +350,6 @@
             this.T0.Name = "T0";
             this.T0.Size = new System.Drawing.Size(40, 40);
             this.T0.TabIndex = 17;
-            this.T0.Text = "Sc";
             this.T0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // T000
@@ -363,6 +368,7 @@
             this.T000.TabIndex = 18;
             this.T000.Text = "わ";
             this.T000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.T000.Visible = false;
             // 
             // T_dot
             // 
@@ -386,12 +392,130 @@
             this.toolTip1.BackColor = System.Drawing.SystemColors.Control;
             this.toolTip1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             // 
+            // T_tab_another
+            // 
+            this.T_tab_another.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.T_tab_another.BackColor = System.Drawing.SystemColors.Control;
+            this.T_tab_another.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.T_tab_another.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
+            this.T_tab_another.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.T_tab_another.Location = new System.Drawing.Point(18, 72);
+            this.T_tab_another.Margin = new System.Windows.Forms.Padding(2);
+            this.T_tab_another.Name = "T_tab_another";
+            this.T_tab_another.Size = new System.Drawing.Size(40, 40);
+            this.T_tab_another.TabIndex = 20;
+            this.T_tab_another.Text = "Tab";
+            this.T_tab_another.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.T_tab_another, "Tabキー");
+            this.T_tab_another.Visible = false;
+            this.T_tab_another.Click += new System.EventHandler(this.T_tab_another_Click);
+            // 
+            // T_asterisk_another
+            // 
+            this.T_asterisk_another.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.T_asterisk_another.BackColor = System.Drawing.SystemColors.Control;
+            this.T_asterisk_another.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.T_asterisk_another.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
+            this.T_asterisk_another.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.T_asterisk_another.Location = new System.Drawing.Point(106, 72);
+            this.T_asterisk_another.Margin = new System.Windows.Forms.Padding(2);
+            this.T_asterisk_another.Name = "T_asterisk_another";
+            this.T_asterisk_another.Size = new System.Drawing.Size(40, 40);
+            this.T_asterisk_another.TabIndex = 21;
+            this.T_asterisk_another.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.T_asterisk_another, "アスタリスク(乗算)");
+            this.T_asterisk_another.Visible = false;
+            this.T_asterisk_another.Click += new System.EventHandler(this.T_asterisk_another_Click);
+            // 
+            // T_minus_another
+            // 
+            this.T_minus_another.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.T_minus_another.BackColor = System.Drawing.SystemColors.Control;
+            this.T_minus_another.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.T_minus_another.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
+            this.T_minus_another.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.T_minus_another.Location = new System.Drawing.Point(150, 72);
+            this.T_minus_another.Margin = new System.Windows.Forms.Padding(2);
+            this.T_minus_another.Name = "T_minus_another";
+            this.T_minus_another.Size = new System.Drawing.Size(40, 40);
+            this.T_minus_another.TabIndex = 22;
+            this.T_minus_another.Text = "BS";
+            this.T_minus_another.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.T_minus_another, "ハイフン(減算)");
+            this.T_minus_another.Visible = false;
+            // 
+            // T_bs_another
+            // 
+            this.T_bs_another.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.T_bs_another.BackColor = System.Drawing.SystemColors.Control;
+            this.T_bs_another.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.T_bs_another.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
+            this.T_bs_another.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.T_bs_another.Location = new System.Drawing.Point(150, 160);
+            this.T_bs_another.Margin = new System.Windows.Forms.Padding(2);
+            this.T_bs_another.Name = "T_bs_another";
+            this.T_bs_another.Size = new System.Drawing.Size(40, 40);
+            this.T_bs_another.TabIndex = 23;
+            this.T_bs_another.Text = "Sp";
+            this.T_bs_another.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.T_bs_another, "BackSpace");
+            this.T_bs_another.Visible = false;
+            // 
+            // T0_another
+            // 
+            this.T0_another.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.T0_another.BackColor = System.Drawing.SystemColors.Control;
+            this.T0_another.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.T0_another.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
+            this.T0_another.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.T0_another.Location = new System.Drawing.Point(18, 248);
+            this.T0_another.Margin = new System.Windows.Forms.Padding(2);
+            this.T0_another.Name = "T0_another";
+            this.T0_another.Size = new System.Drawing.Size(84, 40);
+            this.T0_another.TabIndex = 24;
+            this.T0_another.Text = "わ";
+            this.T0_another.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.T0_another.Visible = false;
+            // 
+            // T00
+            // 
+            this.T00.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.T00.BackColor = System.Drawing.SystemColors.Control;
+            this.T00.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.T00.Font = new System.Drawing.Font("Yu Gothic UI", 9F);
+            this.T00.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.T00.Location = new System.Drawing.Point(62, 248);
+            this.T00.Margin = new System.Windows.Forms.Padding(2);
+            this.T00.Name = "T00";
+            this.T00.Size = new System.Drawing.Size(40, 40);
+            this.T00.TabIndex = 25;
+            this.T00.Text = "わ";
+            this.T00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // OverlayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(300, 300);
+            this.Controls.Add(this.T00);
+            this.Controls.Add(this.T0_another);
+            this.Controls.Add(this.T_bs_another);
+            this.Controls.Add(this.T_minus_another);
+            this.Controls.Add(this.T_asterisk_another);
+            this.Controls.Add(this.T_tab_another);
             this.Controls.Add(this.T_dot);
             this.Controls.Add(this.T000);
             this.Controls.Add(this.T0);
@@ -446,6 +570,12 @@
         private System.Windows.Forms.Label T000;
         private System.Windows.Forms.Label T_dot;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label T_tab_another;
+        private System.Windows.Forms.Label T_asterisk_another;
+        private System.Windows.Forms.Label T_minus_another;
+        private System.Windows.Forms.Label T_bs_another;
+        private System.Windows.Forms.Label T0_another;
+        private System.Windows.Forms.Label T00;
     }
 }
 
