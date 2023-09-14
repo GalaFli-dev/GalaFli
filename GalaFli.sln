@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalaFli", "GalaFli\GalaFli.csproj", "{EF1D23FC-3A44-4552-961F-295D91A06518}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GalaFli-Installer", "GalaFli-Installer\GalaFli-Installer.vdproj", "{2ADC6FBD-9807-4F35-B5FA-59F2974F8106}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{EF1D23FC-3A44-4552-961F-295D91A06518}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF1D23FC-3A44-4552-961F-295D91A06518}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF1D23FC-3A44-4552-961F-295D91A06518}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ADC6FBD-9807-4F35-B5FA-59F2974F8106}.Debug|Any CPU.ActiveCfg = Debug
+		{2ADC6FBD-9807-4F35-B5FA-59F2974F8106}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
