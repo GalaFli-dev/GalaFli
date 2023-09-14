@@ -1,0 +1,6609 @@
+{
+  "data": [
+    {
+      "name": "custom_basis_1",
+      "basis": true,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "transition",
+          "value": [["mode_list"]],
+          "text": "Fn"
+        },
+        {
+          "keyname": "T5",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "custom_basis_2",
+      "basis": true,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "transition",
+          "value": [["mode_list"]],
+          "text": "Fn"
+        },
+        {
+          "keyname": "T5",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "custom_basis_3",
+      "basis": true,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "transition",
+          "value": [["mode_list"]],
+          "text": "Fn"
+        },
+        {
+          "keyname": "T5",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_basis",
+      "basis": true,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": "transition",
+          "value": [["kana_symbol_1"]],
+          "text": "記"
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": "send",
+          "value": [["tab"]],
+          "text": "Tab"
+        },
+        {
+          "keyname": "T_minus",
+          "action": "send",
+          "value": [["space"]],
+          "text": "Sp"
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_row_a"]],
+          "text": "あ"
+        },
+        {
+          "keyname": "T8",
+          "action": "transition",
+          "value": [["kana_row_ka"]],
+          "text": "か"
+        },
+        {
+          "keyname": "T9",
+          "action": "transition",
+          "value": [["kana_row_sa"]],
+          "text": "さ"
+        },
+        {
+          "keyname": "T_plus",
+          "action": "transition",
+          "value": [["mode_list"]],
+          "text": "Fn"
+        },
+        {
+          "keyname": "T4",
+          "action": "transition",
+          "value": [["kana_row_ta"]],
+          "text": "た"
+        },
+        {
+          "keyname": "T5",
+          "action": "transition",
+          "value": [["kana_row_na"]],
+          "text": "な"
+        },
+        {
+          "keyname": "T6",
+          "action": "transition",
+          "value": [["kana_row_ha"]],
+          "text": "は"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "send",
+          "value": [["bs"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["kana_row_ma"]],
+          "text": "ま"
+        },
+        {
+          "keyname": "T2",
+          "action": "transition",
+          "value": [["kana_row_ya"]],
+          "text": "や"
+        },
+        {
+          "keyname": "T3",
+          "action": "transition",
+          "value": [["kana_row_ra"]],
+          "text": "ら"
+        },
+
+        {
+          "keyname": "T_enter",
+          "action": "send",
+          "value": [["enter"]],
+          "text": "Enter"
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": "Sc"
+        },
+        {
+          "keyname": "T000",
+          "action": "transition",
+          "value": [["kana_row_wa"]],
+          "text": "わ"
+        },
+        {
+          "keyname": "T_dot",
+          "action": "transition",
+          "value": [["kana_mark"]],
+          "text": "、"
+        }
+      ]
+    },
+    {
+      "name": "kana_row_a",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_row_va"]],
+          "text": "゛"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["u"]],
+          "text": "う"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["i"]],
+          "text": "い"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["a"]],
+          "text": "あ"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["e"]],
+          "text": "え"
+        },
+
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["kana_small_a"]],
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["o"]],
+          "text": "お"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_va",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_row_a"]],
+          "text": "解除"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["v"], ["u"]],
+          "text": "ゔ"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T5",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_small_a",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["l"], ["u"]],
+          "text": "ぅ"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["l"], ["i"]],
+          "text": "ぃ"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["l"], ["a"]],
+          "text": "ぁ"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["l"], ["e"]],
+          "text": "ぇ"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["kana_row_a"]],
+          "text": "大"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["l"], ["o"]],
+          "text": "ぉ"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_ka",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_row_ga"]],
+          "text": "゛"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["k"], ["u"]],
+          "text": "く"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["k"], ["i"]],
+          "text": "き"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["k"], ["a"]],
+          "text": "か"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["k"], ["e"]],
+          "text": "け"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["k"], ["o"]],
+          "text": "こ"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_ga",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_row_ka"]],
+          "text": "解除"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["g"], ["u"]],
+          "text": "ぐ"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["g"], ["i"]],
+          "text": "ぎ"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["g"], ["a"]],
+          "text": "が"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["g"], ["e"]],
+          "text": "げ"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["g"], ["o"]],
+          "text": "ご"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_sa",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_row_za"]],
+          "text": "゛"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["s"], ["u"]],
+          "text": "す"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["s"], ["i"]],
+          "text": "し"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["s"], ["a"]],
+          "text": "さ"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["s"], ["e"]],
+          "text": "せ"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["s"], ["o"]],
+          "text": "そ"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_za",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_row_sa"]],
+          "text": "解除"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["z"], ["u"]],
+          "text": "ず"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["z"], ["i"]],
+          "text": "じ"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["z"], ["a"]],
+          "text": "ざ"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["z"], ["e"]],
+          "text": "ぜ"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["z"], ["o"]],
+          "text": "ぞ"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_ta",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_row_da"]],
+          "text": "゛"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["t"], ["u"]],
+          "text": "つ"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["t"], ["i"]],
+          "text": "ち"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["t"], ["a"]],
+          "text": "た"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["t"], ["e"]],
+          "text": "て"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["kana_small_ta"]],
+          "text": "小"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["t"], ["o"]],
+          "text": "と"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_da",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_row_ta"]],
+          "text": "解除"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["d"], ["u"]],
+          "text": "づ"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["d"], ["i"]],
+          "text": "ぢ"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["d"], ["a"]],
+          "text": "だ"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["d"], ["e"]],
+          "text": "で"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["d"], ["o"]],
+          "text": "ど"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_small_ta",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["l"], ["t"], ["u"]],
+          "text": "っ"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T5",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["kana_row_ta"]],
+          "text": "大"
+        },
+        {
+          "keyname": "T2",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_na",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["n"], ["u"]],
+          "text": "ぬ"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["n"], ["i"]],
+          "text": "に"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["n"], ["a"]],
+          "text": "な"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["n"], ["e"]],
+          "text": "ね"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["n"], ["o"]],
+          "text": "の"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_ha",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_row_ba"]],
+          "text": "゛"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["h"], ["u"]],
+          "text": "ふ"
+        },
+        {
+          "keyname": "T9",
+          "action": "transition",
+          "value": [["kana_row_pa"]],
+          "text": "゜"
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["h"], ["i"]],
+          "text": "ひ"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["h"], ["a"]],
+          "text": "は"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["h"], ["e"]],
+          "text": "へ"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["h"], ["o"]],
+          "text": "ほ"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_ba",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_row_ha"]],
+          "text": "解除"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["b"], ["u"]],
+          "text": "ぶ"
+        },
+        {
+          "keyname": "T9",
+          "action": "transition",
+          "value": [["kana_row_pa"]],
+          "text": "゜"
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["b"], ["i"]],
+          "text": "び"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["b"], ["a"]],
+          "text": "ば"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["b"], ["e"]],
+          "text": "べ"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["b"], ["o"]],
+          "text": "ぼ"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_pa",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_row_ba"]],
+          "text": "゛"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["p"], ["u"]],
+          "text": "ぷ"
+        },
+        {
+          "keyname": "T9",
+          "action": "transition",
+          "value": [["kana_row_ha"]],
+          "text": "解除"
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["p"], ["i"]],
+          "text": "ぴ"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["p"], ["a"]],
+          "text": "ぱ"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["p"], ["e"]],
+          "text": "ぺ"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["p"], ["o"]],
+          "text": "ぽ"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_ma",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["m"], ["u"]],
+          "text": "む"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["m"], ["i"]],
+          "text": "み"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["m"], ["a"]],
+          "text": "ま"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["m"], ["e"]],
+          "text": "め"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["m"], ["o"]],
+          "text": "も"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_ya",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["y"], ["u"]],
+          "text": "ゆ"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["「"]],
+          "text": "「"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["y"], ["a"]],
+          "text": "や"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["」"]],
+          "text": "」"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["kana_small_ya"]],
+          "text": "小"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["y"], ["o"]],
+          "text": "よ"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_small_ya",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["l"], ["y"], ["u"]],
+          "text": "ゅ"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["l"], ["y"], ["a"]],
+          "text": "ゃ"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["kana_row_ya"]],
+          "text": "大"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["l"], ["y"], ["o"]],
+          "text": "ょ"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_ra",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["r"], ["u"]],
+          "text": "る"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["r"], ["i"]],
+          "text": "り"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["r"], ["a"]],
+          "text": "ら"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["r"], ["e"]],
+          "text": "れ"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["r"], ["o"]],
+          "text": "ろ"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_row_wa",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["n"], ["n"]],
+          "text": "ん"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["w"], ["o"]],
+          "text": "を"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["w"], ["a"]],
+          "text": "わ"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["ー"]],
+          "text": "ー"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["kana_small_wa"]],
+          "text": "小"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["～"]],
+          "text": "～"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_small_wa",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["l"], ["w"], ["a"]],
+          "text": "ゎ"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["kana_row_wa"]],
+          "text": "大"
+        },
+        {
+          "keyname": "T2",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_mark",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["？"]],
+          "text": "？"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["。"]],
+          "text": "。"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["、"]],
+          "text": "、"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["！"]],
+          "text": "！"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "kana_symbol_1",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_symbol_2"]],
+          "text": "次"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["/?"]],
+          "text": "・"
+        },
+        {
+          "keyname": "T9",
+          "action": "send",
+          "value": [["@`"]],
+          "text": "＠"
+        },
+        {
+          "keyname": "T_plus",
+          "action": "send",
+          "value": [["shift", "\\_"]],
+          "text": "＿"
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["shift", "3"]],
+          "text": "＃"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "-="]],
+          "text": "＝"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["shift", "6"]],
+          "text": "＆"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "send",
+          "value": [["shift", ":*"]],
+          "text": "＊"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["shift", ";+"]],
+          "text": "＋"
+        },
+        {
+          "keyname": "T3",
+          "action": "send",
+          "value": [["shift", "5"]],
+          "text": "％"
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": "send",
+          "value": [["shift", "7"]],
+          "text": "’"
+        },
+        {
+          "keyname": "T_dot",
+          "action": "send",
+          "value": [["shift", "2"]],
+          "text": "”"
+        }
+      ]
+    },
+    {
+      "name": "kana_symbol_2",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["kana_symbol_1"]],
+          "text": "前"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", ",<"]],
+          "text": "＜"
+        },
+        {
+          "keyname": "T9",
+          "action": "send",
+          "value": [["shift", ".>"]],
+          "text": "＞"
+        },
+        {
+          "keyname": "T_plus",
+          "action": "send",
+          "value": [["\\|"]],
+          "text": "￥"
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [[":*"]],
+          "text": "："
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "[{"]],
+          "text": "｛"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["shift", "]}"]],
+          "text": "｝"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "send",
+          "value": [[";+"]],
+          "text": "；"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["shift", "8"]],
+          "text": "（"
+        },
+        {
+          "keyname": "T3",
+          "action": "send",
+          "value": [["shift", "9"]],
+          "text": "）"
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": "send",
+          "value": [["shift", "@`"]],
+          "text": "｀"
+        },
+        {
+          "keyname": "T_dot",
+          "action": "send",
+          "value": [["shift", "\\|"]],
+          "text": "｜"
+        }
+      ]
+    },
+    {
+      "name": "alpha_basis",
+      "basis": true,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": "send",
+          "value": [["alpha_symbol_1"]],
+          "text": "記"
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": "send",
+          "value": [["tab"]],
+          "text": "Tab"
+        },
+        {
+          "keyname": "T_minus",
+          "action": "send",
+          "value": [["space"]],
+          "text": "Sp"
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["alpha_mark_1"]],
+          "text": "@-_/"
+        },
+        {
+          "keyname": "T8",
+          "action": "transition",
+          "value": [["alpha_row_abc"]],
+          "text": "abc"
+        },
+        {
+          "keyname": "T9",
+          "action": "transition",
+          "value": [["alpha_row_def"]],
+          "text": "def"
+        },
+        {
+          "keyname": "T_plus",
+          "action": "transition",
+          "value": [["mode_list"]],
+          "text": "Fn"
+        },
+        {
+          "keyname": "T4",
+          "action": "transition",
+          "value": [["alpha_row_ghi"]],
+          "text": "ghi"
+        },
+        {
+          "keyname": "T5",
+          "action": "transition",
+          "value": [["alpha_row_jkl"]],
+          "text": "jkl"
+        },
+        {
+          "keyname": "T6",
+          "action": "transition",
+          "value": [["alpha_row_mno"]],
+          "text": "mno"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "send",
+          "value": [["bs"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_row_pqrs"]],
+          "text": "pqrs"
+        },
+        {
+          "keyname": "T2",
+          "action": "transition",
+          "value": [["alpha_row_tuv"]],
+          "text": "tuv"
+        },
+        {
+          "keyname": "T3",
+          "action": "transition",
+          "value": [["alpha_row_wxyz"]],
+          "text": "wxyz"
+        },
+        {
+          "keyname": "T_enter",
+          "action": "send",
+          "value": [["enter"]],
+          "text": "Enter"
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": "Sc"
+        },
+        {
+          "keyname": "T000",
+          "action": "transition",
+          "value": [["alpha_mark_2"]],
+          "text": "'\":;"
+        },
+        {
+          "keyname": "T_dot",
+          "action": "transition",
+          "value": [["alpha_mark_3"]],
+          "text": ".,?!"
+        }
+      ]
+    },
+    {
+      "name": "alpha_row_abc",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["c"]],
+          "text": "c"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["b"]],
+          "text": "b"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["a"]],
+          "text": "a"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_upper_abc"]],
+          "text": "⇧"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["8"]],
+          "text": "8"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_upper_abc",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", "c"]],
+          "text": "C"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["shift", "b"]],
+          "text": "B"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "a"]],
+          "text": "A"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_row_abc"]],
+          "text": "↑"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["8"]],
+          "text": "8"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_row_def",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["f"]],
+          "text": "f"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["e"]],
+          "text": "e"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["d"]],
+          "text": "d"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_upper_def"]],
+          "text": "⇧"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["9"]],
+          "text": "9"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_upper_def",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", "f"]],
+          "text": "F"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["shift", "e"]],
+          "text": "E"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "d"]],
+          "text": "D"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_row_def"]],
+          "text": "↑"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["9"]],
+          "text": "9"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_row_ghi",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["i"]],
+          "text": "i"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["h"]],
+          "text": "h"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["g"]],
+          "text": "g"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_upper_ghi"]],
+          "text": "⇧"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["4"]],
+          "text": "4"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_upper_ghi",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", "i"]],
+          "text": "I"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["shift", "h"]],
+          "text": "H"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "g"]],
+          "text": "G"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_row_ghi"]],
+          "text": "↑"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["4"]],
+          "text": "4"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_row_jkl",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["l"]],
+          "text": "l"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["k"]],
+          "text": "k"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["j"]],
+          "text": "j"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_upper_jkl"]],
+          "text": "⇧"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["5"]],
+          "text": "5"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_upper_jkl",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", "l"]],
+          "text": "L"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["shift", "k"]],
+          "text": "K"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "j"]],
+          "text": "J"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_row_jkl"]],
+          "text": "↑"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["5"]],
+          "text": "5"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_row_mno",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["o"]],
+          "text": "o"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["n"]],
+          "text": "n"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["m"]],
+          "text": "m"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_upper_mno"]],
+          "text": "⇧"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["6"]],
+          "text": "6"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_upper_mno",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", "o"]],
+          "text": "O"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["shift", "n"]],
+          "text": "N"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "m"]],
+          "text": "M"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_row_mno"]],
+          "text": "↑"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["6"]],
+          "text": "6"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_row_pqrs",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["r"]],
+          "text": "r"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["q"]],
+          "text": "q"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["p"]],
+          "text": "p"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["s"]],
+          "text": "s"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_upper_pqrs"]],
+          "text": "⇧"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["1"]],
+          "text": "1"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_upper_pqrs",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", "r"]],
+          "text": "R"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["shift", "q"]],
+          "text": "Q"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "p"]],
+          "text": "P"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["shift", "s"]],
+          "text": "S"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_row_pqrs"]],
+          "text": "↑"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["1"]],
+          "text": "1"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_row_tuv",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["v"]],
+          "text": "v"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["u"]],
+          "text": "u"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["t"]],
+          "text": "t"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_upper_tuv"]],
+          "text": "⇧"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["2"]],
+          "text": "2"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_upper_tuv",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", "v"]],
+          "text": "V"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["shift", "u"]],
+          "text": "U"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "t"]],
+          "text": "T"
+        },
+        {
+          "keyname": "T6",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_row_tuv"]],
+          "text": "↑"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["2"]],
+          "text": "2"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_row_wxyz",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["y"]],
+          "text": "y"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["x"]],
+          "text": "x"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["w"]],
+          "text": "w"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["z"]],
+          "text": "z"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_upper_wxyz"]],
+          "text": "⇧"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["3"]],
+          "text": "3"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_upper_wxyz",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", "y"]],
+          "text": "Y"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["shift", "x"]],
+          "text": "X"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "w"]],
+          "text": "W"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["shift", "z"]],
+          "text": "Z"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["alpha_row_wxyz"]],
+          "text": "↑"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["3"]],
+          "text": "3"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_mark_1",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", "\\_"]],
+          "text": "_"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["-="]],
+          "text": "-"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["@`"]],
+          "text": "@"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["/?"]],
+          "text": "/"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["7"]],
+          "text": "7"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_mark_2",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [[":*"]],
+          "text": ":"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["shift", "2"]],
+          "text": "\""
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "7"]],
+          "text": "'"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [[";+"]],
+          "text": ";"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["0"]],
+          "text": "0"
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_mark_3",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", "/?"]],
+          "text": "?"
+        },
+        {
+          "keyname": "T9",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [[",<"]],
+          "text": ","
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [[".>"]],
+          "text": "."
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["shift", "1"]],
+          "text": "!"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T3",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_symbol_1",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["alpha_symbol_2"]],
+          "text": "次"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", "^~"]],
+          "text": "~"
+        },
+        {
+          "keyname": "T9",
+          "action": "send",
+          "value": [["shift", "4"]],
+          "text": "$"
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["shift", "3"]],
+          "text": "#"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "-="]],
+          "text": "="
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["shift", "6"]],
+          "text": "&"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "send",
+          "value": [["shift", ":*"]],
+          "text": "*"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["shift", ";+"]],
+          "text": "+"
+        },
+        {
+          "keyname": "T3",
+          "action": "send",
+          "value": [["shift", "5"]],
+          "text": "%"
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "alpha_symbol_2",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["alpha_symbol_1"]],
+          "text": "前"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["shift", ",<"]],
+          "text": "<"
+        },
+        {
+          "keyname": "T9",
+          "action": "send",
+          "value": [["shift", ".>"]],
+          "text": ">"
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["^~"]],
+          "text": "^"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", "[{"]],
+          "text": "{"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["shift", "]}"]],
+          "text": "}"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "send",
+          "value": [["\\|"]],
+          "text": "¥"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["shift", "8"]],
+          "text": "("
+        },
+        {
+          "keyname": "T3",
+          "action": "send",
+          "value": [["shift", "9"]],
+          "text": ")"
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": "send",
+          "value": [["shift", "@`"]],
+          "text": "`"
+        },
+        {
+          "keyname": "T_dot",
+          "action": "send",
+          "value": [["shift", "\\|"]],
+          "text": "|"
+        }
+      ]
+    },
+    {
+      "name": "num_basis",
+      "basis": true,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": "transition",
+          "value": [["num_symbol"]],
+          "text": "記"
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": "send",
+          "value": [["tab"]],
+          "text": "Tab"
+        },
+        {
+          "keyname": "T_minus",
+          "action": "send",
+          "value": [["space"]],
+          "text": "Sp"
+        },
+        {
+          "keyname": "T7",
+          "action": "send",
+          "value": [["7"]],
+          "text": "7"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["8"]],
+          "text": "8"
+        },
+        {
+          "keyname": "T9",
+          "action": "send",
+          "value": [["9"]],
+          "text": "9"
+        },
+        {
+          "keyname": "T_plus",
+          "action": "transition",
+          "value": [["mode_list"]],
+          "text": "Fn"
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["4"]],
+          "text": "4"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["5"]],
+          "text": "5"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["6"]],
+          "text": "6"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "send",
+          "value": [["bs"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "send",
+          "value": [["1"]],
+          "text": "1"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["2"]],
+          "text": "2"
+        },
+        {
+          "keyname": "T3",
+          "action": "send",
+          "value": [["3"]],
+          "text": "3"
+        },
+        {
+          "keyname": "T_enter",
+          "action": "send",
+          "value": [["enter"]],
+          "text": "Enter"
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": "send",
+          "value": [["0"]],
+          "text": "0"
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": "."
+        }
+      ]
+    },
+    {
+      "name": "num_symbol",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "A"
+        },
+        {
+          "keyname": "T8",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "あ"
+        },
+        {
+          "keyname": "T9",
+          "action": "transition",
+          "value": [[""]],
+          "text": "="
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["-="]],
+          "text": "-"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["shift", ";+"]],
+          "text": "+"
+        },
+        {
+          "keyname": "T6",
+          "action": "transition",
+          "value": [["shift", "5"]],
+          "text": "%"
+        },
+        {
+          "keyname": "T_bs",
+          "action": "transition",
+          "value": [["num_basis"]],
+          "text": "BS"
+        },
+        {
+          "keyname": "T1",
+          "action": "send",
+          "value": [[".>"]],
+          "text": "."
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["shift", "8"]],
+          "text": "("
+        },
+        {
+          "keyname": "T3",
+          "action": "transition",
+          "value": [["shift", "9"]],
+          "text": ")"
+        },
+
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": "send",
+          "value": [["shift", "[{"]],
+          "text": "{"
+        },
+        {
+          "keyname": "T_dot",
+          "action": "send",
+          "value": [["shift", "]}"]],
+          "text": "}"
+        }
+      ]
+    },
+    {
+      "name": "mode_list",
+      "basis": false,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "transition",
+          "value": [["alpha_basis"]],
+          "text": "A"
+        },
+        {
+          "keyname": "T8",
+          "action": "transition",
+          "value": [["kana_basis"]],
+          "text": "あ"
+        },
+        {
+          "keyname": "T9",
+          "action": "transition",
+          "value": [["num_basis"]],
+          "text": "数"
+        },
+        {
+          "keyname": "T_plus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T4",
+          "action": "transition",
+          "value": [["fn_basis"]],
+          "text": "fn"
+        },
+        {
+          "keyname": "T5",
+          "action": "transition",
+          "value": [["cmd_basis"]],
+          "text": "cmd"
+        },
+        {
+          "keyname": "T6",
+          "action": "transition",
+          "value": [["special_basis"]],
+          "text": "sp"
+        },
+        {
+          "keyname": "T_bs",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T1",
+          "action": "transition",
+          "value": [["custom_basis_1"]],
+          "text": "cst1"
+        },
+        {
+          "keyname": "T2",
+          "action": "transition",
+          "value": [["custom_basis_2"]],
+          "text": "cst2"
+        },
+        {
+          "keyname": "T3",
+          "action": "transition",
+          "value": [["custom_basis_3"]],
+          "text": "cst3"
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "fn_basis",
+      "basis": true,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": "send",
+          "value": [["F10"]],
+          "text": "F10"
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": "send",
+          "value": [["F11"]],
+          "text": "F11"
+        },
+        {
+          "keyname": "T_minus",
+          "action": "send",
+          "value": [["F12"]],
+          "text": "F12"
+        },
+        {
+          "keyname": "T7",
+          "action": "send",
+          "value": [["F7"]],
+          "text": "F7"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["F8"]],
+          "text": "F8"
+        },
+        {
+          "keyname": "T9",
+          "action": "send",
+          "value": [["F9"]],
+          "text": "F9"
+        },
+        {
+          "keyname": "T_plus",
+          "action": "transition",
+          "value": [["mode_list"]],
+          "text": "Fn"
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["F4"]],
+          "text": "F4"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["F5"]],
+          "text": "F5"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["F6"]],
+          "text": "F6"
+        },
+        {
+          "keyname": "T_bs",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T1",
+          "action": "send",
+          "value": [["F1"]],
+          "text": "F1"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["F2"]],
+          "text": "F2"
+        },
+        {
+          "keyname": "T3",
+          "action": "send",
+          "value": [["F3"]],
+          "text": "F3"
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_dot",
+          "action": null,
+          "value": null,
+          "text": ""
+        }
+      ]
+    },
+    {
+      "name": "cmd_basis",
+      "basis": true,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T_minus",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T7",
+          "action": "send",
+          "value": null,
+          "text": "送信"
+        },
+        {
+          "keyname": "T8",
+          "action": "cmd",
+          "value": [["leftctrl"]],
+          "text": "Lctr"
+        },
+        {
+          "keyname": "T9",
+          "action": "cmd",
+          "value": [["rightctrl"]],
+          "text": "Rctr"
+        },
+        {
+          "keyname": "T_plus",
+          "action": "transition",
+          "value": [["mode_list"]],
+          "text": "Fn"
+        },
+        {
+          "keyname": "T4",
+          "action": "delete",
+          "value": null,
+          "text": "解除"
+        },
+        {
+          "keyname": "T5",
+          "action": "cmd",
+          "value": [["leftalt"]],
+          "text": "Lalt"
+        },
+        {
+          "keyname": "T6",
+          "action": "cmd",
+          "value": [["rightalt"]],
+          "text": "Ralt"
+        },
+
+        {
+          "keyname": "T_bs",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T1",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T2",
+          "action": "cmd",
+          "value": [["leftshift"]],
+          "text": "L↑"
+        },
+        {
+          "keyname": "T3",
+          "action": "cmd",
+          "value": [["rightshift"]],
+          "text": "R↑"
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": "cmd",
+          "value": [["leftwin"]],
+          "text": "Lwin"
+        },
+        {
+          "keyname": "T_dot",
+          "action": "cmd",
+          "value": [["rightwin"]],
+          "text": "Rwin"
+        }
+      ]
+    },
+    {
+      "name": "special_basis",
+      "basis": true,
+      "keys": [
+        {
+          "keyname": "T_tab",
+          "action": null,
+          "value": null,
+          "text": "NL"
+        },
+        {
+          "keyname": "T_slash",
+          "action": "send",
+          "value": [["apps"]],
+          "text": "Apps"
+        },
+        {
+          "keyname": "T_asterisk",
+          "action": "send",
+          "value": [["esc"]],
+          "text": "Esc"
+        },
+        {
+          "keyname": "T_minus",
+          "action": "send",
+          "value": [["shiftcapslock"]],
+          "text": "caps"
+        },
+        {
+          "keyname": "T7",
+          "action": "send",
+          "value": [["printscreen"]],
+          "text": "Psc"
+        },
+        {
+          "keyname": "T8",
+          "action": "send",
+          "value": [["scrolllock"]],
+          "text": "Slk"
+        },
+        {
+          "keyname": "T9",
+          "action": "send",
+          "value": [["pause"]],
+          "text": "Pau"
+        },
+        {
+          "keyname": "T_plus",
+          "action": "transition",
+          "value": [["mode_list"]],
+          "text": "Fn"
+        },
+        {
+          "keyname": "T4",
+          "action": "send",
+          "value": [["insert"]],
+          "text": "Ins"
+        },
+        {
+          "keyname": "T5",
+          "action": "send",
+          "value": [["home"]],
+          "text": "Home"
+        },
+        {
+          "keyname": "T6",
+          "action": "send",
+          "value": [["pageup"]],
+          "text": "Pup"
+        },
+        {
+          "keyname": "T_bs",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T1",
+          "action": "send",
+          "value": [["delete"]],
+          "text": "Del"
+        },
+        {
+          "keyname": "T2",
+          "action": "send",
+          "value": [["end"]],
+          "text": "End"
+        },
+        {
+          "keyname": "T3",
+          "action": "send",
+          "value": [["pagedown"]],
+          "text": "Pdn"
+        },
+        {
+          "keyname": "T_enter",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T0",
+          "action": null,
+          "value": null,
+          "text": ""
+        },
+        {
+          "keyname": "T000",
+          "action": "send",
+          "value": [["conversion"]],
+          "text": "変換"
+        },
+        {
+          "keyname": "T_dot",
+          "action": "send",
+          "value": [["noconversion"]],
+          "text": "無変"
+        }
+      ]
+    }
+  ]
+}
