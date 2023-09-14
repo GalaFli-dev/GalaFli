@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OverlayForm));
             this.T_tab = new System.Windows.Forms.Label();
             this.T_slash = new System.Windows.Forms.Label();
             this.T_asterisk = new System.Windows.Forms.Label();
@@ -536,6 +537,7 @@
             this.Controls.Add(this.T_slash);
             this.Controls.Add(this.T_tab);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "OverlayForm";
             this.Opacity = 0.7D;
             this.ShowIcon = false;
