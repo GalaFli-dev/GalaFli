@@ -87,8 +87,20 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_27278C249C61434A80C769ED485089C8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_36EB364C73C862403F8F7B490E964DD7"
         "OwnerKey" = "8:_20F422727C2A47849D750E1BC20D0A5E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_561C4149A35B43488EBDE171F2DF6207"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -574,6 +586,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_27278C249C61434A80C769ED485089C8"
+            {
+            "SourcePath" = "8:..\\GalaFli\\icon.ico"
+            "TargetName" = "8:icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_81A9CE49C23D43B8909E227804E4B7B8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_36EB364C73C862403F8F7B490E964DD7"
             {
             "AssemblyRegister" = "3:1"
@@ -603,6 +635,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_561C4149A35B43488EBDE171F2DF6207"
+            {
+            "SourcePath" = "8:..\\GalaFli\\all_data.json"
+            "TargetName" = "8:all_data.json"
+            "Tag" = "8:"
+            "Folder" = "8:_81A9CE49C23D43B8909E227804E4B7B8"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_58983869754FD7BA91AEF7DC8C8E559F"
@@ -1114,7 +1166,7 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:GalaFli-Installer"
+        "ProductName" = "8:GalaFli"
         "ProductCode" = "8:{2F29F016-8B49-4AA1-9738-AB7C645DC3ED}"
         "PackageCode" = "8:{FB1305CB-20E6-4E11-89F1-C18AB092A573}"
         "UpgradeCode" = "8:{ACF75FF9-EEFA-487D-81B9-A013D4A20082}"
@@ -1124,12 +1176,12 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Default Company Name"
+        "Manufacturer" = "8:GalaFli"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:GalaFli-Installer"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Default Company Name"
+        "ARPCONTACT" = "8:GalaFli"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
