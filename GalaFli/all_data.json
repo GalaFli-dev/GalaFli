@@ -556,7 +556,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -679,7 +679,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -812,7 +812,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -947,7 +947,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -1082,7 +1082,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -1217,7 +1217,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -1352,7 +1352,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -1487,7 +1487,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -1622,7 +1622,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -1749,7 +1749,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -1881,7 +1881,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -2016,7 +2016,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -2151,7 +2151,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -2286,7 +2286,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -2421,7 +2421,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -2550,7 +2550,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -2681,7 +2681,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -2817,7 +2817,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -2949,7 +2949,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -3073,7 +3073,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -3193,7 +3193,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -3313,7 +3313,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -3433,7 +3433,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "kana_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -3673,7 +3673,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -3793,7 +3793,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -3913,7 +3913,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -4033,7 +4033,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -4153,7 +4153,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -4273,7 +4273,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -4393,7 +4393,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -4513,7 +4513,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -4633,7 +4633,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -4753,7 +4753,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -4873,7 +4873,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -4993,7 +4993,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -5113,7 +5113,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -5233,7 +5233,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -5353,7 +5353,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -5473,7 +5473,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -5593,7 +5593,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -5713,7 +5713,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -5833,7 +5833,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -5953,7 +5953,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -6073,7 +6073,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "alpha_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
@@ -6313,7 +6313,7 @@
           "keyname": "T_bs",
           "action": "transition",
           "value": [ [ "num_basis" ] ],
-          "text": "BS"
+          "text": "戻"
         },
         {
           "keyname": "T1",
