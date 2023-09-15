@@ -6269,20 +6269,20 @@
         },
         {
           "keyname": "T7",
-          "action": "transition",
-          "value": [ [ "alpha_basis" ] ],
-          "text": "A"
+          "action": "send",
+          "value": [ [ "/?" ] ],
+          "text": "/"
         },
         {
           "keyname": "T8",
-          "action": "transition",
-          "value": [ [ "kana_basis" ] ],
-          "text": "あ"
+          "action": "send",
+          "value": [ [ "shift", ":*" ] ],
+          "text": "*"
         },
         {
           "keyname": "T9",
           "action": "transition",
-          "value": [ [ "" ] ],
+          "value": [ [ "shift", "-=" ] ],
           "text": "="
         },
         {
