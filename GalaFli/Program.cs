@@ -314,7 +314,7 @@ namespace GalaFli
                 {
                     //ここで入力を受け付ける
                     int device = InputInterceptor.Wait(context);
-
+                    a.FormTopMost();
                     //入力されたキーコードやキーのステータスを取得
                     Stroke stroke = new Stroke();
                     InputInterceptor.Receive(context, device, ref stroke, 1);

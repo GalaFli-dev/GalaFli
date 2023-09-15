@@ -630,6 +630,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "OverlayForm";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.OverlayForm_Load_1);
             this.Shown += new System.EventHandler(this.OverlayForm_Shown);
             this.viewers_Shortcutkey.ResumeLayout(false);
             this.ResumeLayout(false);
