@@ -160,6 +160,16 @@ namespace GalaFli
             TopMost = true;
         }
 
+        public void FormTopMost()
+        {
+            Invoke(new Action(() =>
+            {
+                TopMost = true;
+            }));
+
+
+        }
+
 
         protected override CreateParams CreateParams //クリック透過してくれるやつ
         {
@@ -171,17 +181,7 @@ namespace GalaFli
             }
         }
 
-        public void CloseForm()
-        {
-            if (this.InvokeRequired)
-            {
-                this.Invoke(new Action(() => this.Close()));
-            }
-            else
-            {
-                this.Close();
-            }
-        }
+        
 
 
         public void Json_Load(GalaFli.Data jsonDataTemp)
@@ -570,6 +570,11 @@ namespace GalaFli
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void OverlayForm_Load_1(object sender, EventArgs e)
         {
 
         }
