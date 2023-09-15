@@ -6305,7 +6305,7 @@
         },
         {
           "keyname": "T6",
-          "action": "transition",
+          "action": "send",
           "value": [ [ "shift", "5" ] ],
           "text": "%"
         },
@@ -6329,7 +6329,7 @@
         },
         {
           "keyname": "T3",
-          "action": "transition",
+          "action": "send",
           "value": [ [ "shift", "9" ] ],
           "text": ")"
         },
