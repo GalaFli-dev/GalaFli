@@ -179,7 +179,7 @@
             this.T_slash.Name = "T_slash";
             this.T_slash.Size = new System.Drawing.Size(40, 40);
             this.T_slash.TabIndex = 68;
-            this.T_slash.Text = "記号";
+            this.T_slash.Text = "記";
             this.T_slash.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.T_slash, "スラッシュ(除算)");
             this.T_slash.UseMnemonic = false;
