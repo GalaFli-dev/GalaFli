@@ -5952,7 +5952,7 @@
         {
           "keyname": "T_bs",
           "action": "transition",
-          "value": [ [ "kana_basis" ] ],
+          "value": [ [ "alpha_basis" ] ],
           "text": "BS"
         },
         {
@@ -6072,7 +6072,7 @@
         {
           "keyname": "T_bs",
           "action": "transition",
-          "value": [ [ "kana_basis" ] ],
+          "value": [ [ "alpha_basis" ] ],
           "text": "BS"
         },
         {
