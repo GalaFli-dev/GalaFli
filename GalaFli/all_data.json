@@ -562,7 +562,7 @@
           "keyname": "T1",
           "action": "transition",
           "value": [ [ "kana_small_a" ] ],
-          "text": ""
+          "text": "小"
         },
         {
           "keyname": "T2",
