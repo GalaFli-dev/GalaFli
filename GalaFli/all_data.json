@@ -6281,7 +6281,7 @@
         },
         {
           "keyname": "T9",
-          "action": "transition",
+          "action": "send",
           "value": [ [ "shift", "-=" ] ],
           "text": "="
         },
