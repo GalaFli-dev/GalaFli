@@ -2942,7 +2942,7 @@
         {
           "keyname": "T6",
           "action": "send",
-          "value": [ [ "ー" ] ],
+          "value": [ [ "-=" ] ],
           "text": "ー"
         },
         {
@@ -2960,7 +2960,7 @@
         {
           "keyname": "T2",
           "action": "send",
-          "value": [ [ "～" ] ],
+          "value": [ [ "shift", "^~" ] ],
           "text": "～"
         },
         {
