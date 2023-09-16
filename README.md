@@ -15,7 +15,7 @@ USB接続のテンキーを用意して接続し、GalaFliを起動してくだ�
 Releases内のInstaller(GalaFli-Installer.msi)を使用してください。
 ## カスタム設定(JSONの書き方)
 変更する場合はnameがcustom_basis_1,2,3を使用してください<br>
-action   :  "send"を設定してください
+action   :  "send"を設定してください<br>
 value    :  入力に「shift」を使うものには、値に"shift"を入力する必要があります。<br>
             あ、aを送信するなら[["a"]]、Aを送信するなら[["shift","a"]]<br>
             かを送信するならば[["k"],["a"]]、!を送信するならば[["shift","1"]]になります<br>
