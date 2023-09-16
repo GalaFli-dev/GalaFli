@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingForm));
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ItemBox = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.buttonUpdate = new System.Windows.Forms.Button();
@@ -90,15 +90,14 @@
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
-            // comboBox1
+            // ItemBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(6, 46);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(365, 20);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "デバイスを選択してください";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.ItemBox.FormattingEnabled = true;
+            this.ItemBox.Location = new System.Drawing.Point(6, 46);
+            this.ItemBox.Name = "ItemBox";
+            this.ItemBox.Size = new System.Drawing.Size(365, 20);
+            this.ItemBox.TabIndex = 2;
+            this.ItemBox.Text = "デバイスを選択してください";
             // 
             // textBox1
             // 
@@ -252,7 +251,7 @@
             this.ConfigureGroupBox.Controls.Add(this.buttonUpdate);
             this.ConfigureGroupBox.Controls.Add(this.textBox2);
             this.ConfigureGroupBox.Controls.Add(this.textBox1);
-            this.ConfigureGroupBox.Controls.Add(this.comboBox1);
+            this.ConfigureGroupBox.Controls.Add(this.ItemBox);
             this.ConfigureGroupBox.Controls.Add(this.panel1);
             this.ConfigureGroupBox.Location = new System.Drawing.Point(11, 12);
             this.ConfigureGroupBox.Name = "ConfigureGroupBox";
@@ -277,7 +276,6 @@
             this.T_A_ThreeZeros.Text = "000";
             this.T_A_ThreeZeros.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.T_A_ThreeZeros.Visible = false;
-            this.T_A_ThreeZeros.Click += new System.EventHandler(this.T_A_ThreeZeros_Click);
             // 
             // T_B_Plus
             // 
@@ -314,7 +312,6 @@
             this.T_B_BS.Text = "BS";
             this.T_B_BS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.T_B_BS.Visible = false;
-            this.T_B_BS.Click += new System.EventHandler(this.T_B_BS_Click);
             // 
             // T_Tab
             // 
@@ -661,7 +658,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SettingForm";
             this.Text = "設定";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.SettingForm_Load);
             this.ConfigureGroupBox.ResumeLayout(false);
             this.ConfigureGroupBox.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -672,7 +669,7 @@
         #endregion
         private System.Windows.Forms.Button buttonCancel;
         public System.Windows.Forms.Button buttonSave;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox ItemBox;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button buttonUpdate;
