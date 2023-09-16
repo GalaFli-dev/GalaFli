@@ -14,8 +14,6 @@ using System.Windows.Forms;
 
 namespace GalaFli
 {
-
-
     //jsonから受け取ったすべてのデータが入るクラス（構造体）
     public class Data
     {
@@ -43,7 +41,6 @@ namespace GalaFli
     // デバイスIDとデバイス名を格納するクラス（構造体）
     public class TenkeySettings
     {
-
         //どこでインスタンス化しても読み込めるようにここにDllImportが書いてあります
         [DllImport("kernel32.dll", EntryPoint = "GetPrivateProfileStringW", CharSet = CharSet.Unicode, SetLastError = true)]
         static extern uint GetPrivateProfileString(string lpAppName, string lpKeyName, string lpDefault, StringBuilder lpReturnedString, uint nSize, string lpFileName);
@@ -91,9 +88,6 @@ namespace GalaFli
             Application.SetCompatibleTextRenderingDefault(false);
 
             TenkeySettings tenkeySettings = new TenkeySettings();
-
-
-
             try
             {
                 //ファイルパスの指定(自身で用意した場所のパスを書く)
@@ -105,8 +99,6 @@ namespace GalaFli
 
                 //JSONをクラスオブジェクト(インスタンス)に変換
                 var jsonDataTemp = JsonSerializer.Deserialize<Data>(json);
-
-
 
 
                 // 設定ファイルの読み込みが出来るかどうかで分岐
@@ -143,18 +135,12 @@ namespace GalaFli
                         Application.Run(new input_Realtime(always_overlay));
                     });
 
-
-
-
                     inputThread.Start();
 
                     // Tasktray をメインスレッドで実行
                     Application.Run(new Tasktray());
                 }
-
-
             }
-
             catch (Exception ex)
             {
                 // エラーメッセージ表示やログ出力などのエラーハンドリングを行う
@@ -178,9 +164,6 @@ namespace GalaFli
             this.contextMenu1 = new System.Windows.Forms.ContextMenu();
             this.menuItem1 = new System.Windows.Forms.MenuItem();
 
-
-
-
             // Create the NotifyIcon.
             this.notifyIcon1 = new NotifyIcon();
 
@@ -188,17 +171,13 @@ namespace GalaFli
             // in the systray for this application.
             notifyIcon1.Icon = new Icon("icon.ico");
 
-
-
             // The Text property sets the text that will be displayed,
             // in a tooltip, when the mouse hovers over the systray icon.
             notifyIcon1.Visible = true;
 
             notifyIcon1.Text = "Galafli";
 
-
             ContextMenuStrip contextMenuStrip = new ContextMenuStrip();
-
 
             // 設定
             ToolStripMenuItem settingItem = new ToolStripMenuItem();
@@ -213,17 +192,10 @@ namespace GalaFli
             EixtItem.Click += EixtApp_Click;
             contextMenuStrip.Items.Add(EixtItem);
 
-
-
-
             notifyIcon1.ContextMenuStrip = contextMenuStrip;
-
 
             this.WindowState = FormWindowState.Minimized;
             this.ShowInTaskbar = false;
-
-
-
         }
 
         protected override void Dispose(bool disposing)
@@ -258,16 +230,7 @@ namespace GalaFli
 
         private void SettingForm_Click(object Sender, EventArgs e)
         {
-            // @Himonooにフォーム起動のコード書いてもらう。
             new SettingForm(notifyIcon1).ShowDialog();
-
-        }
-
-        private EventHandler debug_Click(OverlayForm a)
-        {
-            a.debug_post();
-            throw new NotImplementedException();
-
         }
     }
 
@@ -283,9 +246,9 @@ namespace GalaFli
         TenkeySettings tenkeySettings = new TenkeySettings();
 
         OverlayForm overlayForm;
-        public input_Realtime(OverlayForm a)
+        public input_Realtime(OverlayForm getForm)
         {
-            overlayForm = a;
+            overlayForm = getForm;
 
             //ドライバと接続を試行し、結果によって処理を分岐
             if (!InitializeDriver())
@@ -314,7 +277,7 @@ namespace GalaFli
                 {
                     //ここで入力を受け付ける
                     int device = InputInterceptor.Wait(context);
-                    a.FormTopMost();
+                    getForm.FormTopMost();
                     //入力されたキーコードやキーのステータスを取得
                     Stroke stroke = new Stroke();
                     InputInterceptor.Receive(context, device, ref stroke, 1);
@@ -328,7 +291,6 @@ namespace GalaFli
                     {
                         char currentChar;
                         int offset = 0;
-
                         do
                         {
                             currentChar = (char)Marshal.ReadByte(idBuffer, offset);
@@ -365,7 +327,6 @@ namespace GalaFli
                     {
                         InputInterceptor.Send(context, device, ref stroke, 1);
                     }
-
                     Marshal.FreeHGlobal(idBuffer);
                 }
             }

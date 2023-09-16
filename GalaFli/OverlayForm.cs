@@ -7,7 +7,6 @@ using System.Diagnostics;
 
 namespace GalaFli
 {
-
     public partial class OverlayForm : Form
     {
 
@@ -17,7 +16,6 @@ namespace GalaFli
         Statedata currentState = new Statedata();
         //デフォルトの画面状態
         Statedata basisState = new Statedata();
-
 
 
         //仮想キーコードを使うための宣言↓↓
@@ -117,25 +115,19 @@ namespace GalaFli
         [return: MarshalAs(UnmanagedType.Bool)]
         public static extern bool SetForegroundWindow(IntPtr hWnd);
 
-
         public Label lblMessage;
 
-
-        public OverlayForm(TenkeySettings a)
+        public OverlayForm(TenkeySettings setting)
         {
-
 
             TransparencyKey = Color.Gray;
             StartPosition = FormStartPosition.Manual;
-
             // 画面の幅と高さを取得
             int screenWidth = Screen.PrimaryScreen.WorkingArea.Width;
             int screenHeight = Screen.PrimaryScreen.WorkingArea.Height;
             
             Width = 330;
             Height = 240;
-
-
 
             Location = new Point(screenWidth - this.Width - 25, screenHeight - this.Height - 25);
 
@@ -148,15 +140,11 @@ namespace GalaFli
             Console.WriteLine(this.Width);
             Console.WriteLine(this.Height);
 
-
-
             InitializeComponent();
 
-
-
-            T0.Visible = !a.isZeroUnion;
-            T000.Visible = !a.isZeroUnion;
-            T0_another.Visible = a.isZeroUnion;
+            T0.Visible = !setting.isZeroUnion;
+            T000.Visible = !setting.isZeroUnion;
+            T0_another.Visible = setting.isZeroUnion;
             TopMost = true;
 
         }
@@ -206,7 +194,6 @@ namespace GalaFli
                 // エラーメッセージ表示やログ出力などのエラーハンドリングを行う
                 Debug.WriteLine("Form JSONファイルの読み込みエラー: " + ex.Message);
             }
-
             //初期値設定
             basisState = jsonData.data[3];
             currentState = basisState;
@@ -282,7 +269,6 @@ namespace GalaFli
             {
                 //かな状態の時は全角
                 case "kana_basis":
-
                     //全角状態にする
                     AddInput(KEYDOWN, "hiragana");
                     AddInput(KEYUP, "hiragana");
@@ -294,7 +280,6 @@ namespace GalaFli
                 case "num_basis":
                 case "fn_basis":
                 case "special_basis":
-
                     //まず、全角状態にする
                     AddInput(KEYDOWN, "hiragana");
                     AddInput(KEYUP, "hiragana");
@@ -306,7 +291,6 @@ namespace GalaFli
                     break;
 
                 case "cmd_basis":
-
                     //cmd_basisで送信処理まで来るのは送信ボタンのみ
                     //cmdList内に値が入っている場合　かつ　送信ボタンの場合
                     if (cmdList.Count > 0)
@@ -318,9 +302,7 @@ namespace GalaFli
                             AddInput(KEYUP, cmdList[i]);
                         }
                     }
-
                     break;
-
                 //Error
                 default:
                     Console.WriteLine("Error → basisState.name = {0}", basisState.name);
@@ -358,7 +340,6 @@ namespace GalaFli
                 }
             }
 
-
             //コマンドが入力状態の時（up)
             if (cmdList.Count > 0)
             {
@@ -379,8 +360,6 @@ namespace GalaFli
             //初期化
             inp.Clear();
             cmdList.Clear();
-
-
 
 
             //currentState（現在の画面）を basisState（デフォルトの画面）を上書き
@@ -545,31 +524,6 @@ namespace GalaFli
 
             //内部処理起動
             InternalProcess(keyCode);
-
-        }
-
-        private void T_tab_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void T_asterisk_another_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void T_tab_another_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void OverlayForm_Load(object sender, EventArgs e)
-        {
 
         }
 
