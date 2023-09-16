@@ -17,6 +17,5 @@ if args(2)="1" then
     set WshShortcut = _
         WshShell.CreateShortcut(desktop & "\" & args(1) & ".lnk")
     WshShortcut.TargetPath = args(0)
-    WshShortcut.IconLocation = "C:\Users\s212127.TSITCL\source\repos\test_2\test_2\bin\Debug\icon.ico"
     WshShortcut.Save
 end if
