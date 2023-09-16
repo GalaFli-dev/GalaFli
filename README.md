@@ -14,17 +14,18 @@ USB接続のテンキーを用意して接続し、GalaFliを起動してくだ�
 ## 導入方法
 Releases内のInstaller(GalaFli-Installer.msi)を使用してください。
 ## カスタム設定方法
-all_data.jsonを下記のように記述してください。<br>
-* ` name : custom_basis_1,2,3 `<br><br>
-` "keys" : [] `内データ
+all_data.jsonを下記のように記述してください。<br><br>
+` "name" : "custom_basis_1" `<br>
+` "keys" : [] `
 * ` "action":"send" `<br>
-* ` "value":"" `<br>
+* ` "value": null `<br>
 分割打ち：「や」を入力する場合、` [["y"]["a"]] `を格納してください。<br>
 同時打ち：「！」を入力する場合、` [["shift","1"]] `を格納してください。<br>
 ※格納するデータは下記のdictionaryを参照してください。
 
 * ` "text":"" ` <br>
-表示するテキストを格納してください。
+表示するテキストを格納してください。<br>
+※4byteを超えるとボタンが崩れます。<br><br>
 
 ```csharp:data
 {"leftclick",0x01},{"rightclick",0x02},{"ctrlpause",0x03},{"middleclick",0x04},{"bs",0x08},{"tab",0x09},{"enter",0x0D},
