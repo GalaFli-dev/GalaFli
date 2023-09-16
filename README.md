@@ -14,7 +14,7 @@ USB接続のテンキーを用意して接続し、GalaFliを起動してくだ�
 ## 導入方法
 Releases内のInstaller(GalaFli-Installer.msi)を使用してください。
 ## 動作環境
-Windows 10 以降 <br><br><br><br>
+Windows 10 以降。 <br><br><br><br>
 
 ## About
 Windows resident software that allows keyboard input using only the numeric keypad.<br>
@@ -29,7 +29,7 @@ From the settings screen, select the hardware ID of the numeric keypad to be use
 ## Introduction Method
 Installer (GalaFli-Installer.msi) in Releases.
 ## Operating Environment
-Windows 10 or later
+Windows 10 or later.
 
 <br><br>
 © 2023 yonrise
