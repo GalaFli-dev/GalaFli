@@ -110,6 +110,13 @@ namespace GalaFli
         //仮想キーコードオブジェクトを入れる配列
         List<INPUT> inp = new List<INPUT>();
 
+        [DllImport("user32.dll")]
+        public static extern IntPtr GetForegroundWindow();
+
+        [DllImport("user32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetForegroundWindow(IntPtr hWnd);
+
 
         public Label lblMessage;
 
@@ -164,7 +171,9 @@ namespace GalaFli
         {
             Invoke(new Action(() =>
             {
+                IntPtr hWnd = GetForegroundWindow();
                 TopMost = true;
+                SetForegroundWindow(hWnd);
             }));
 
 
