@@ -14,13 +14,12 @@ USB接続のテンキーを用意して接続し、GalaFliを起動してくだ�
 ## 導入方法
 Releases内のInstaller(GalaFli-Installer.msi)を使用してください。
 ## カスタム設定(JSONの書き方)
-name     :  表示するページの名前(あ行であればkana_row_a)<br>
-basis    :  default状態であるかの値(kana_basisであればtrue、kana_row_aであればfalse)<br>
-keyname  :  値を変更しないでください<br>
-action   :  "send"→送信、"transition"→遷移
-value    :  入力する時にshiftを使うものには、値に"shift"を入力する必要があります。<br>
-            あ、aを送信するなら[["a"]]、Aを送信するなら[["shift","a"]]、かを送信するならば[["k"],["a"]]、!を送信するならば[["shift","1"]]になります<br>
-text     :  表示するテキストを設定します→全角の！を表示するならば、value:[["shift","1"]]、text:"！(全角)"で設定してください
+変更する場合はnameがcustom_basis_1,2,3を使用してください<br>
+action   :  "send"を設定してください
+value    :  入力に「shift」を使うものには、値に"shift"を入力する必要があります。<br>
+            あ、aを送信するなら[["a"]]、Aを送信するなら[["shift","a"]]<br>
+            かを送信するならば[["k"],["a"]]、!を送信するならば[["shift","1"]]になります<br>
+text     :  表示するテキストを設定します → 全角の！を表示するならば、value:[["shift","1"]]、text:"！(全角)"で設定してください
 ## 動作環境
 Windows 10 以降。 <br><br><br><br>
 
