@@ -153,6 +153,17 @@ namespace GalaFli
         private void OverlayForm_Shown(object sender, EventArgs e)
         {
             TopMost = true;
+            //currentState値を基に画面を構築する
+            String[] TlabelText = new string[19];
+
+            int index = 0; // 配列のインデックス
+
+            foreach (var key_val in basisState.keys)
+            {
+                TlabelText[index] = key_val.text;
+                index++;
+            }
+            Change_Tlabel(TlabelText);
         }
 
         public void FormTopMost()
