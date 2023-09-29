@@ -3156,7 +3156,7 @@
         {
           "keyname": "T8",
           "action": "send",
-          "value": [ [ "/?" ] ],
+          "value": [ [ "shift", "/?" ] ],
           "text": "？"
         },
         {
