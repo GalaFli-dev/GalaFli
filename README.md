@@ -1,5 +1,6 @@
 # GalaFli
-**Galapagos × Flick**
+**Galapagos × Flick**<br><br>
+[README.en here](https://github.com/GalaFli-dev/GalaFli/blob/main/README.en.md)
 ## 概要
 テンキーだけでキーボード入力ができるようになるWindows常駐ソフト。<br>
 ガラケー入力のように限られたキー数で、フリック入力のように十字の操作でキーボード全て
@@ -46,22 +47,6 @@ all_data.jsonを下記のように記述してください。<br><br>
 ```
 
 ## 動作環境
-Windows 10 以降。 <br><br><br><br>
+Windows 10 以降。 <br><br><br>
 
-## About
-Windows resident software that allows keyboard input using only the numeric keypad.<br>
-The keyboard can be used with a limited number of keys, as in Galapagos input, and all keyboard input can be done with a cross operation, as in flick input.
-## How to use
-Prepare and connect a USB-connected numeric keypad and start GalaFli.
-## Setting
-* If the driver is not installed at first startup, it will be installed automatically.<br>
-A reboot is required after installing the driver.<br><br>
-* The USB-connected numeric keypad to be used must be configured.<br>
-From the settings screen, select the hardware ID of the numeric keypad to be used.
-## Introduction Method
-Installer (GalaFli-Installer.msi) in Releases.
-## Operating Environment
-Windows 10 or later.
-
-<br><br>
 © 2023 yonrise
